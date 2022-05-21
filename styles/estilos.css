@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav-main .nav-logo img{
+    width: 200px;
+    
+}
+
+.nav-button{
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(209, 195, 195);
+}
+
+.nav-button .up-line{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0f7abe;
+    margin-bottom: 8px;
+    transition: transform .3s ease;
+    
+}
+.nav-button .middle-line{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0f7abe;
+    margin-bottom: 8px;
+    transform: translateX(10px);
+    transition: transform .3s ease;
+}
+.nav-button .bottom-line{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0f7abe;
+    transition: transform .3s ease;
+}
+/* Animación del botón menú hamburguesa */
+
+.nav-button:hover .up-line{
+    transform: translateX(10px);
+}
+.nav-button:hover .middle-line{
+    transform: translateX(0);
+}
+.nav-button:hover .bottom-line{
+    transform: translateX(10px);
+}
+
+/* +++++++++++++++++++++++++++++++++++++ */
+
