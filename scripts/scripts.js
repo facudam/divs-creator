@@ -1,9 +1,4 @@
-const $hamburgerBoton = document.getElementById('boton-hamburguesa'),
-    $navMenu = document.getElementById('links-menu');
+import { mostrarMenuNav } from "./botonMenu.js";
 
 
-function mostrarMenuNav(){
-   $navMenu.classList.toggle('activo');
-}
-
-$hamburgerBoton.addEventListener('click', mostrarMenuNav);
+mostrarMenuNav('boton-hamburguesa', 'links-menu');
