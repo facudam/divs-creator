@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,11 +16,13 @@
 
 body{
     background-color: var(--body-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
     padding: 10px 15px 0 10px;
     background-color: #fff;
+    
 }
 /* Clase madre del nav. Aquí definiremos flex-column para movil y row para desktop  */
 nav{
@@ -113,7 +117,7 @@ nav{
     overflow: hidden;
     transition: all .5s ease;
     background-color: var(--white-color);
-    font-size: 20px;
+    font-size: 18px;
 }   
 
 .nav-menu .links-menu li{
@@ -129,7 +133,7 @@ nav{
     background-color: var(--body-color);
     color: var(--principal-logo-color);
    
-    font-size: 24px;
+    font-size: 21px;
 
 }
 
@@ -141,5 +145,61 @@ nav{
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Creando el mediascreen para la versión desktop del menú.*/
+
+@media screen and (min-width: 900px) {
+    header{
+        box-shadow: 0px -1px 15px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px -1px 15px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px -1px 15px 0px rgba(0,0,0,0.75);
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .nav-main {
+        width: 50%;
+        padding-left: 70px;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .nav-menu{
+        width: 50%;
+        padding-right: 50px;
+    }
+
+    .nav-menu .links-menu{
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-menu .links-menu li{
+        margin-left: 10px;
+    }
+
+    .nav-menu .links-menu li:hover{
+        background-color: var(--white-color);
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+    .nav-menu .links-menu{
+        justify-content: flex-end;
+
+    }
+    .nav-menu .links-menu li{
+        margin-left: 40px;
+    }
+}
+
+/* +++++++++++++++++++++++++ Fin del media screen ++++++++++++++++++++++++++ */
 
 
