@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
-header{
-    padding: 10px;
+body{
+    background-color: rgb(245,246,247);
 }
 
+header{
+    padding: 10px 15px 0 10px;
+    background-color: #fff;
+}
+/* Clase madre del nav. Aquí definiremos flex-column para movil y row para desktop  */
 nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
+/* Clase secundaria del nav, aquí guardaremos el logo como el boton hamburguesa para movil, con un display en row*/
 
 .nav-main{
     width: 100%;
@@ -20,12 +26,14 @@ nav{
     align-items: center;
 }
 
-
+/* Logo, dentro de la clase secundaria del nav: nav-main*/
 
 .nav-main .nav-logo img{
     width: 200px;
     
 }
+
+/* Botón hamburguesa, dentro de la clase secundaria del nav: nav-main*/
 
 .nav-button{
     width: 50px;
@@ -35,6 +43,8 @@ nav{
     cursor: pointer;
     box-shadow: 1px 1px 5px rgb(209, 195, 195);
 }
+
+/* Diseño del botón hamburguesa, las tres lineas que lo conforman */
 
 .nav-button .up-line{
     display: block;
@@ -73,5 +83,44 @@ nav{
     transform: translateX(10px);
 }
 
+.nav-button:active{
+    box-shadow: 1px 1px 5px #eb1b08;
+}
+
 /* +++++++++++++++++++++++++++++++++++++ */
+
+/* Nav-menú, dentro de la clase madre del nav, tendrá dentro de sí un UL con un display flex column en movil y row en desktop*/
+
+.nav-menu{
+    background-color: #fff;
+}
+
+/* El menú por defecto en movil estará escondido para aparecer al clickear el boton hamburguesa*/
+
+.nav-menu .links-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 0;/* Al estar activo el menú su tamaño no será 0*/
+    overflow: hidden;
+    transition: all .5s ease;
+    background-color: #fff;
+}   
+
+.nav-menu .links-menu li{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
+} 
+
+/* Clase para activar el menú  y añadirla desde JS */
+
+.nav-menu .links-menu.activo{
+    height: 13rem;
+    
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 
