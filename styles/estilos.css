@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
 
 *{
     margin: 0;
@@ -201,5 +202,36 @@ nav{
 }
 
 /* +++++++++++++++++++++++++ Fin del media screen ++++++++++++++++++++++++++ */
+
+/*  Comenzamos a estilar la cabecera principal */
+
+.cabecera-principal {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../imagenes/fondo-cabecera.jpg');
+    background-size: cover;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera-principal h1{
+    font-family: 'Akshar', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: var(--white-color);
+    text-shadow: 2px 1px 1px black;
+}
+
+.cabecera-principal p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--white-color);
+    text-shadow: 2px 1px 1px #000;
+}
 
 

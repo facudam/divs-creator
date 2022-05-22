@@ -1,6 +1,6 @@
-export function mostrarMenuNav(){
-    const $hamburgerBoton = document.getElementById('boton-hamburguesa'),
-        $navMenu = document.getElementById('links-menu');
+export function mostrarMenuNav(btnHamburger, linksMenu){
+    const $hamburgerBoton = document.getElementById(btnHamburger),
+        $navMenu = document.getElementById(linksMenu);
 
 
     $hamburgerBoton.addEventListener('click', (e) => {

@@ -1,4 +1,4 @@
 import { mostrarMenuNav } from "./botonMenu.js";
 
 
-mostrarMenuNav();
+mostrarMenuNav('boton-hamburguesa', 'links-menu');
