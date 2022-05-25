@@ -53,6 +53,58 @@
             <p class="p-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sequi, nemo fugit assumenda, inventore numquam ad iste itaque at doloribus quia?</p>
             <a class="read-more" href="#" target="_blank" rel="noopener noreferrer">Read more...</a>
         </div>
+
+        <div class="card-controls">
+            <div class="title-controls">
+                <div class="title-controls__btn">Structure styles</div>
+                <div class="title-controls__btn">Content</div>
+                <div class="title-controls__btn">Color styles</div>
+            </div>
+
+            <div class="structure-styles">
+                <div class="border-radius-container">
+                    <p>Border-radius:</p>
+                    <form>
+                        <label for="top-left">Top-left</label>
+                        <input id="top-left" type="number">
+
+                        <label for="top-right">Top-right</label>
+                        <input id="top-right" type="number">
+
+                        <label for="bottom-left">Bottom-left</label>
+                        <input id="bottom-left" type="number">
+
+                        <label for="bottom-right">Bottom-right</label>
+                        <input id="bottom-right" type="number">
+                    </form>
+
+                </div>
+                <div class="box-shadow-container">
+                    <form>
+                        <label for="color">Choose a shadow-color</label>
+                        <input id="color" type="color" value="#808080">
+                        <label for="horizontal-shadow">Horizontal shadow</label>
+                        <input id="horizontal-shadow" type="range" min="-200" max="200">
+                        <label for="vertical-shadow">Vertical shadow</label>
+                        <input id="vertical-shadow" type="range" min="-200" max="200">
+                        <label for="blur-radius">Blur radius</label>
+                        <input id="blur-radius" type="range" min="-200" max="200">
+                        <label for="spread-radius">Spread radius</label>
+                        <input id="spread-radius" type="range" min="-200" max="200">
+                        <label for="color-opacity">Color opacity</label>
+                        <input type="range" min="0" max="100">
+                    </form>
+                </div>
+                <div class="padding-text">
+                    <form>
+                        <label for="padding-texts">Padding texts:</label>
+                        <input id="padding-texts" type="range" min="0" max="50">
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
         
     </section>
 

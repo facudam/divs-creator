@@ -21,6 +21,7 @@
     --card-width: 300px;
     --card-height: 400px;
     --border-radius-card: 10px;
+    --padding-text-inside: 12px;
 }
 
 body{
@@ -252,8 +253,10 @@ nav{
 
 .first-div-creator{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: var(--width-90);
+    max-width: 1400px;
     background-color: var(--white-color);
     padding: var(--padding-section-card);
     margin: auto;
@@ -267,11 +270,12 @@ nav{
 .simple-card{
     width: 95%;
     max-width: var(--card-width);
-    max-height: var(--card-heigth);
     border-radius: var(--border-radius-card);
-    box-shadow: 1px 2px 10px 1px gray;
+    box-shadow: 1px 2px 10px 1px #808080;
     overflow: hidden;
+    background-color: inherit;
 }
+
 
 .img-container{
     width: 100%; 
@@ -280,17 +284,16 @@ nav{
 
 .img-container img{
     width: 100%;
-    margin-bottom: 10px;
+   
 }
 
 .third-title {
     text-align: center;
-    margin-bottom: 10px;
-    padding: 12px 12px 0 12px;
+    padding: var(--padding-text-inside);
 }
 
 .p-card{
-    padding: 0 12px 12px;
+    padding: 0 var(--padding-text-inside) var(--padding-text-inside) var(--padding-text-inside);
     text-align: center;
 }
 
@@ -299,9 +302,26 @@ nav{
     text-align: center;
     font-weight: 700;
     text-decoration: none;
-    margin-bottom: 12px;
+    padding-bottom: var(--padding-text-inside);
 }
 
+/* Styles-controls*/
+
+.title-controls{
+    display: flex;
+}
+
+.card-controls{
+    margin-top: 10px;
+}
+
+.title-controls__btn{
+    margin-right: 10px;
+    padding:  5px;
+    background-color: var(--secondary--logo-color);
+    border-radius: 7px 7px 0 0;
+    color: var(--white-color);
+}
 
 
 
