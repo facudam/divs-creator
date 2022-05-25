@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divs creator: Crea tus tarjetas personalizadas</title>
+    <title>Divs creator: Create your personalized cards</title>
     <link rel="icon" href="imagenes/logo_small_icon_only_inverted.png">
     <link rel="stylesheet" href="styles/estilos.css">
 </head>
@@ -43,6 +43,7 @@
     </section>
 
     <h2 class="second-title">Very simple card</h2>
+    <!--Creamos la primera sección con la primera plantilla card-->
     <section class="first-div-creator">
         
         <div class="simple-card">
@@ -63,41 +64,74 @@
 
             <div class="structure-styles">
                 <div class="border-radius-container">
-                    <p>Border-radius:</p>
+                    <p class="structure-p">Border-radius:</p>
                     <form>
-                        <label for="top-left">Top-left</label>
-                        <input id="top-left" type="number">
+                        <div class="flex-container">
+                            <div class="input-borders">
+                                <label for="top-left">Top-left</label>
+                                <input id="top-left" type="number">
+                            </div>
 
-                        <label for="top-right">Top-right</label>
-                        <input id="top-right" type="number">
+                            <div class="input-borders">
+                                <label for="top-right">Top-right</label>
+                                <input id="top-right" type="number">
+                            </div>
+                        </div>
 
-                        <label for="bottom-left">Bottom-left</label>
-                        <input id="bottom-left" type="number">
+                        <div class="flex-container">
+                            <div class="input-borders">
+                                <label for="bottom-left">Bottom-left</label>
+                                <input id="bottom-left" type="number">
+                            </div>
 
-                        <label for="bottom-right">Bottom-right</label>
-                        <input id="bottom-right" type="number">
+                            <div class="input-borders">
+                                <label for="bottom-right">Bottom-right</label>
+                                <input id="bottom-right" type="number">
+                            </div> 
+                        </div>
+                        
+
+                                         
                     </form>
 
                 </div>
                 <div class="box-shadow-container">
+                    <p class="structure-p">Box-shadow:</p>
                     <form>
-                        <label for="color">Choose a shadow-color</label>
-                        <input id="color" type="color" value="#808080">
-                        <label for="horizontal-shadow">Horizontal shadow</label>
-                        <input id="horizontal-shadow" type="range" min="-200" max="200">
-                        <label for="vertical-shadow">Vertical shadow</label>
-                        <input id="vertical-shadow" type="range" min="-200" max="200">
-                        <label for="blur-radius">Blur radius</label>
-                        <input id="blur-radius" type="range" min="-200" max="200">
-                        <label for="spread-radius">Spread radius</label>
-                        <input id="spread-radius" type="range" min="-200" max="200">
-                        <label for="color-opacity">Color opacity</label>
-                        <input type="range" min="0" max="100">
+                        <div class="input-shadow">
+                            <label for="color">Choose a shadow-color</label>
+                            <input id="color" type="color" value="#808080">
+                        </div>
+
+                        <div class="input-shadow">
+                            <label for="horizontal-shadow">Horizontal shadow</label>
+                            <input id="horizontal-shadow" type="range" min="-200" max="200">
+                        </div>
+
+                        <div class="input-shadow">
+                            <label for="vertical-shadow">Vertical shadow</label>
+                            <input id="vertical-shadow" type="range" min="-200" max="200">
+                        </div>
+
+                        <div class="input-shadow">
+                            <label for="blur-radius">Blur radius</label>
+                            <input id="blur-radius" type="range" min="-200" max="200">
+                        </div>
+
+                        <div class="input-shadow">
+                            <label for="spread-radius">Spread radius</label>
+                            <input id="spread-radius" type="range" min="-200" max="200">
+                        </div>
+
+                        <div class="input-shadow">
+                            <label for="color-opacity">Color opacity</label>
+                            <input type="range" min="0" max="100">
+                        </div> 
                     </form>
                 </div>
                 <div class="padding-text">
                     <form>
-                        <label for="padding-texts">Padding texts:</label>
+                        <label class="structure-label" for="padding-texts">Padding texts:</label>
                         <input id="padding-texts" type="range" min="0" max="50">
                     </form>
                 </div>

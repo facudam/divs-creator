@@ -254,7 +254,7 @@ nav{
 .first-div-creator{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: var(--width-90);
     max-width: 1400px;
     background-color: var(--white-color);
@@ -268,8 +268,9 @@ nav{
 
 /* Primera card: Simple card styles*/
 .simple-card{
-    width: 95%;
+    width: 100%;
     max-width: var(--card-width);
+    max-height: 370px;
     border-radius: var(--border-radius-card);
     box-shadow: 1px 2px 10px 1px #808080;
     overflow: hidden;
@@ -307,21 +308,160 @@ nav{
 
 /* Styles-controls*/
 
+.card-controls{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
 .title-controls{
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--padding-text-inside);
 }
 
-.card-controls{
-    margin-top: 10px;
-}
+
 
 .title-controls__btn{
-    margin-right: 10px;
-    padding:  5px;
+    padding:  4px;
     background-color: var(--secondary--logo-color);
     border-radius: 7px 7px 0 0;
     color: var(--white-color);
+    font-size: 15px;
+    transition: all .3s ease;
 }
+
+.title-controls__btn:hover{
+    cursor: pointer;
+    background-color: var(--white-color);
+    outline: 1px solid var(--secondary--logo-color);
+    color: #000;
+}
+
+/* Contenedor de los estilos de estructura -Border-radius, box-shadow, paddings-*/
+.structure-styles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Border-radius */
+
+.structure-p{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--padding-text-inside);
+}
+
+
+.border-radius-container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--padding-text-inside);
+}
+
+.border-radius-container input{
+    width: 40px;
+    margin: auto;
+}
+
+/* Box-shadow */
+
+.box-shadow-container{
+    margin-top: var(--padding-text-inside);
+}
+
+.input-shadow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-shadow-container label{
+    text-align: center;
+}
+
+.box-shadow-container #color{
+    margin: auto;
+    margin-bottom: var(--padding-text-inside);
+}
+
+.box-shadow-container input{
+    margin-bottom: var(--padding-text-inside);
+}
+
+/* Padding-text */
+
+.padding-text{
+    margin-top: var(--padding-text-inside);
+}
+
+.structure-label{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.padding-text form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
