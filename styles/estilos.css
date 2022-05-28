@@ -20,7 +20,6 @@
     --margin-top-section: 30px;
     --card-width: 300px;
     --card-height: 400px;
-    --border-radius-card: 10px;
     --padding-text-inside: 12px;
 }
 
@@ -255,6 +254,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     width: var(--width-90);
     max-width: 1400px;
     background-color: var(--white-color);
@@ -271,7 +271,10 @@ nav{
     width: 100%;
     max-width: var(--card-width);
     max-height: 370px;
-    border-radius: var(--border-radius-card);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 1px 2px 10px 1px #808080;
     overflow: hidden;
     background-color: inherit;
@@ -309,9 +312,15 @@ nav{
 /* Styles-controls*/
 
 .card-controls{
-    margin-top: 20px;
+    margin-top: 40px;/*Esto hay que borrarlo en el modo desktop*/
     width: 100%;
     max-width: 500px;
+}
+
+@media screen and (min-width: 960px) {
+    .card-controls{
+        margin-top: 0;
+    }
 }
 
 .title-controls{
