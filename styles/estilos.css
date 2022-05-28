@@ -21,6 +21,7 @@
     --card-width: 300px;
     --card-height: 400px;
     --padding-text-inside: 12px;
+
 }
 
 body{
@@ -326,7 +327,7 @@ nav{
 .title-controls{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--padding-text-inside);
+    margin-bottom: 12px;
 }
 
 
@@ -360,7 +361,7 @@ nav{
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: var(--padding-text-inside);
+    margin-bottom: 12px;
 }
 
 
@@ -374,7 +375,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: var(--padding-text-inside);
+    margin-bottom: 12px;
 }
 
 .border-radius-container input{
@@ -385,7 +386,7 @@ nav{
 /* Box-shadow */
 
 .box-shadow-container{
-    margin-top: var(--padding-text-inside);
+    margin-top: 12px;
 }
 
 .input-shadow{
@@ -400,17 +401,17 @@ nav{
 
 .box-shadow-container #color{
     margin: auto;
-    margin-bottom: var(--padding-text-inside);
+    margin-bottom: 12px;
 }
 
 .box-shadow-container input{
-    margin-bottom: var(--padding-text-inside);
+    margin-bottom: 12px;
 }
 
 /* Padding-text */
 
 .padding-text{
-    margin-top: var(--padding-text-inside);
+    margin-top: 12px;
 }
 
 .structure-label{

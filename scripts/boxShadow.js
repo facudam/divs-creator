@@ -41,9 +41,5 @@ export const changeBoxShadow = (card, color, horizontalShadow, verticalShadow, b
         $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
     })
 
-    //color-opacity
-
-    $colorOpacity.addEventListener('input', e => {
-        $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
-    })
+    
 }
