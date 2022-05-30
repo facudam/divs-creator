@@ -19,7 +19,6 @@ export const changeBoxShadow = (card, color, horizontalShadow, verticalShadow, b
     // Horizontal-shadow
 
     $horizontalShadow.addEventListener('input', e => {
-        console.log($horizontalShadow.value);
         $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
     })
 

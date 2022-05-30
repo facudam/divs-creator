@@ -11,3 +11,4 @@ changeBorderRadius('.simple-card','top-left', 'top-right', 'bottom-left', 'botto
 changeBoxShadow('.simple-card', 'color', 'horizontal-shadow', 'vertical-shadow', 'blur-radius', 'spread-radius');
 
 changeTextPadding('padding-texts', 'third-title', 'p-card');
+
