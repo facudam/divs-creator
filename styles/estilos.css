@@ -452,12 +452,10 @@ nav{
 
 
 #h-title{
-    height: 49px;
+    height: 30px;
 }
 
-#h-title option{
-    text-align: center;
-}
+
 
 /* Paragraph styles*/
 
@@ -480,11 +478,22 @@ nav{
     flex-direction: column;
 }
 
+.link-area-form__inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
 #url-link{
-    width: 100%;
-    height: 40px;
+    width: 65%;
+    height: 30px;
     padding-left: 15px;
     margin-bottom: 15px;
+}
+
+#text-link{
+    width: 30%;
+    height: 30px;
+    padding-left: 15px;
 }
 
 #text-decoration-radio{

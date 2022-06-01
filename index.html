@@ -48,11 +48,11 @@
         
         <div class="simple-card">
             <div class="img-container">
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.pixabay.com/photo/2018/02/23/09/03/human-3175027_960_720.jpg" alt=""></a>
+                <a id="card-image" href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.pixabay.com/photo/2018/02/23/09/03/human-3175027_960_720.jpg" alt=""></a>
             </div>
             <h3 id="third-title" class="third-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
             <p id="p-card" class="p-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sequi, nemo fugit assumenda, inventore numquam ad iste itaque at doloribus quia?</p>
-            <a class="read-more" href="#" target="_blank" rel="noopener noreferrer">Read more...</a>
+            <a id="read-more" class="read-more" href="#" target="_blank" rel="noopener noreferrer">Read more...</a>
         </div>
 
         <div class="card-controls">
@@ -150,20 +150,24 @@
                     </form>
                 </div>
                 <div class="paragraph-area">
-                    <p class="structure-p">Card summary</p>
+                    <p class="structure-p">Card Text</p>
                     <textarea name="paragraph-area" id="paragraph-area" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
                 </div>
                 <div class="link-area">
                     <p class="structure-p">Links data</p>
                     <form class="link-area-form">
-                        <input id="url-link" type="url" placeholder="Write your link-card here">
+                        <div class="link-area-form__inputs">
+                            <input id="url-link" type="url" placeholder="Add your link-card here">
+                            <input id="text-link" type="text" placeholder="Text-link">
+                        </div>
+                        
                         <div class="radio-inputs">
                             <label for="text-decoration-radio">
-                            <input id="text-decoration-radio" type="radio" value="active" checked>Text-decoration
+                            <input id="text-decoration-radio" type="radio" value="active">Text-decoration
                             </label>
 
                             <label for="disabled-radio">
-                                <input id="disabled-radio" type="radio" value="disabled"> None
+                                <input id="disabled-radio" type="radio" value="disabled" checked> None
                             </label>
                         </div>
                         
