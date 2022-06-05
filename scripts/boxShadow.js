@@ -12,32 +12,42 @@ export const changeBoxShadow = (card, color, horizontalShadow, verticalShadow, b
 
     //color-shadow
 
-    $colorShadow.addEventListener('input', e => {
-        $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+    document.addEventListener('input', e => {
+        if(e.target === $colorShadow) {
+            $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+        }
     })
 
     // Horizontal-shadow
 
-    $horizontalShadow.addEventListener('input', e => {
-        $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+    document.addEventListener('input', e => {
+        if(e.target === $horizontalShadow) {
+            $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+        }
     })
 
     //Vertical-shadow
 
-    $verticalShadow.addEventListener('input', e => {
-        $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+    document.addEventListener('input', e => {
+        if(e.target === $verticalShadow) {
+            $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+        } 
     })
 
     //Blur-radius
 
-    $blurRadius.addEventListener('input', e => {
-        $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+    document.addEventListener('input', e => {
+        if(e.target === $blurRadius) {
+            $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+        }
     })
 
     //spread-radius
 
-    $spreadRadius.addEventListener('input', e => {
-        $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+    document.addEventListener('input', e => {
+        if(e.target === $spreadRadius) {
+            $card.style.boxShadow = `${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value}`;
+        }
     })
 
     

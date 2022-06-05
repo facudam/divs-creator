@@ -1,9 +1,13 @@
 
 export const changeTitleCard = ( textAreaTitle, titleCard ) => {
     const $textArea = document.getElementById(textAreaTitle),
-        $titleCard = document.getElementById(titleCard);
+        $titleCard = document.querySelector(titleCard);
+    
 
-    $textArea.addEventListener('keyup', e => {
-        $titleCard.innerHTML = `${$textArea.value}`;
+    document.addEventListener('keyup', e => {
+        if(e.target === $textArea) {
+            $titleCard.innerHTML = `${$textArea.value}`;
+        }
+        
     })
 }

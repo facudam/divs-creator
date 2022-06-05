@@ -3,8 +3,10 @@ export function mostrarMenuNav(btnHamburger, linksMenu){
         $navMenu = document.getElementById(linksMenu);
 
 
-    $hamburgerBoton.addEventListener('click', (e) => {
-    $navMenu.classList.toggle('activo');
-});
+    document.addEventListener('click', (e) => {
+        if(e.target === $hamburgerBoton) {
+            $navMenu.classList.toggle('activo');
+        }
+    });
 }
 

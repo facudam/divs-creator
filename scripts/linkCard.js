@@ -4,9 +4,12 @@ export const addLinkToCard = (cardImage, cardLink, inputLink) => {
         $cardLink = document.getElementById(cardLink),
         $inputLink = document.getElementById(inputLink);
 
-    $inputLink.addEventListener('change', e => {
-        $cardImage.setAttribute('href', $inputLink.value);
-        $cardLink.setAttribute('href', $inputLink.value);
+    document.addEventListener('change', e => {
+        if(e.target === $inputLink) {
+            $cardImage.setAttribute('href', $inputLink.value);
+            $cardLink.setAttribute('href', $inputLink.value);
+        }
+        
     })     
     
 }

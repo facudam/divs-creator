@@ -3,7 +3,10 @@ export const changeTextLinkCard = ( inputTextLink, textLink ) => {
     const $inputTextLink = document.getElementById(inputTextLink),
         $textLink = document.getElementById(textLink);
 
-   $inputTextLink.addEventListener('keyup', e => {
-       $textLink.innerHTML = $inputTextLink.value;
+   document.addEventListener('keyup', e => {
+       if(e.target === $inputTextLink) {
+           $textLink.innerHTML = $inputTextLink.value;
+       }
+       
    })
 }

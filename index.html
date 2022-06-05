@@ -48,9 +48,9 @@
         
         <div class="simple-card">
             <div class="img-container">
-                <a id="card-image" href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.pixabay.com/photo/2018/02/23/09/03/human-3175027_960_720.jpg" alt=""></a>
+                <a id="card-image" href="#" target="_blank" rel="noopener noreferrer"><img id="image-card" src="https://cdn.pixabay.com/photo/2018/02/23/09/03/human-3175027_960_720.jpg" alt=""></a>
+                <h3 id="third-title" class="third-title">Lorem ipsum dolor sit amet consectetur adipisicing</h3>
             </div>
-            <h3 id="third-title" class="third-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
             <p id="p-card" class="p-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sequi, nemo fugit assumenda, inventore numquam ad iste itaque at doloribus quia?</p>
             <a id="read-more" class="read-more" href="#" target="_blank" rel="noopener noreferrer">Read more...</a>
         </div>
@@ -140,18 +140,22 @@
                     <form class="title-content-form">
                         <textarea name="title-area" id="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
                         <select name="h-title" id="h-title">
-                            <option value="H1">h1</option>
-                            <option value="H2">h2</option>
-                            <option value="H3" selected>h3</option>
-                            <option value="H4">h4</option>
-                            <option value="H5">h5</option>
-                            <option value="H6">h6</option>
+                            <option>h1</option>
+                            <option>h2</option>
+                            <option selected>h3</option>
+                            <option>h4</option>
+                            <option</option>
+                            <option>h6</option>
                         </select>
                     </form>
                 </div>
                 <div class="paragraph-area">
                     <p class="structure-p">Card Text</p>
                     <textarea name="paragraph-area" id="paragraph-area" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
+                </div>
+                <div class="image-link">
+                    <p class="structure-p">Card image</p>
+                    <input id="url-image" type="url" placeholder="Add url image">
                 </div>
                 <div class="link-area">
                     <p class="structure-p">Links data</p>

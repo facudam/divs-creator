@@ -4,9 +4,12 @@ export const changeTextPadding = (paddingText, title, paragraph) => {
         $title = document.getElementById(title),
         $paragraph = document.getElementById(paragraph);
 
-    $paddingText.addEventListener('input', e => {
-        $title.style.padding = `${$paddingText.value}px`;
-        $paragraph.style.padding = `0 ${paddingText.value}px ${paddingText.value}px ${paddingText.value}px`;
+    document.addEventListener('input', e => {
+        if(e.target === $paddingText) {
+            $title.style.padding = `${$paddingText.value}px`;
+            $paragraph.style.padding = `${$paddingText.value}px`;;
+        }
+        
 
     })
     

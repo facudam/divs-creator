@@ -9,46 +9,58 @@ export const changeBorderRadius = (card, topLeft, topRight, bottomLeft, bottomRi
 
     //Top-left-border
 
-    $topLeft.addEventListener('click', e => {   
-        $card.style.setProperty('border-top-left-radius', `${$topLeft.value}px`);       
+    document.addEventListener('click', e => {
+        if(e.target === $topLeft) {
+            $card.style.setProperty('border-top-left-radius', `${$topLeft.value}px`); 
+        }          
     })
 
-    $topLeft.addEventListener('keyup', e => {
-        $card.style.setProperty('border-top-left-radius', `${$topLeft.value}px`);
-        
+    document.addEventListener('keyup', e => {
+        if(e.target === $topLeft) {
+            $card.style.setProperty('border-top-left-radius', `${$topLeft.value}px`);
+        }   
     })
 
     // Top-right-border
 
-    $topRight.addEventListener('click', e => {   
-        $card.style.setProperty('border-top-right-radius', `${$topRight.value}px`);       
+    document.addEventListener('click', e => {
+        if(e.target === $topRight) {
+            $card.style.setProperty('border-top-right-radius', `${$topRight.value}px`); 
+        }          
     })
 
-    $topRight.addEventListener('keyup', e => {
-        $card.style.setProperty('border-top-right-radius', `${$topRight.value}px`);
-        
+    document.addEventListener('keyup', e => {
+        if(e.target === $topRight){
+            $card.style.setProperty('border-top-right-radius', `${$topRight.value}px`);
+        }  
     })
 
     //bottom-left-border
 
-    $bottomLeft.addEventListener('click', e => {      
-        $card.style.setProperty('border-bottom-left-radius', `${$bottomLeft.value}px`);       
+    document.addEventListener('click', e => { 
+        if(e.target === $bottomLeft) {
+            $card.style.setProperty('border-bottom-left-radius', `${$bottomLeft.value}px`);
+        }            
     })
 
-    $bottomLeft.addEventListener('keyup', e => {
-        $card.style.setProperty('border-bottom-left-radius', `${$bottomLeft.value}px`);
-        
+    document.addEventListener('keyup', e => {
+        if(e.target === $bottomLeft) {
+            $card.style.setProperty('border-bottom-left-radius', `${$bottomLeft.value}px`);
+        } 
     })
 
     //bottom-right-border
 
-    $bottomRight.addEventListener('click', e => {   
-        $card.style.setProperty('border-bottom-right-radius', `${$bottomRight.value}px`);       
+    document.addEventListener('click', e => {
+        if(e.target === $bottomRight) {
+            $card.style.setProperty('border-bottom-right-radius', `${$bottomRight.value}px`); 
+        }         
     })
 
-    $bottomRight.addEventListener('keyup', e => {
-        $card.style.setProperty('border-bottom-right-radius', `${$bottomRight.value}px`);
-        
+    document.addEventListener('keyup', e => {
+        if(e.target === $bottomRight) {
+            $card.style.setProperty('border-bottom-right-radius', `${$bottomRight.value}px`);
+        }    
     })
 }
 

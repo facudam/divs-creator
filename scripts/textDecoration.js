@@ -4,16 +4,22 @@ export const addTextDecoration = ( textDecoration, none, textLink ) => {
         $noneInput = document.getElementById(none),
         $textLink = document.querySelector(textLink);
     
-    $textDecorationInput.addEventListener('click', e => {
-        $noneInput.checked = false;
-        $textLink.style.setProperty('text-decoration', 'underline');
-        $textDecorationInput.checked = true;
+    document.addEventListener('click', e => {
+        if(e.target === $textDecorationInput){
+            $noneInput.checked = false;
+            $textLink.style.setProperty('text-decoration', 'underline');
+            $textDecorationInput.checked = true;
+        }
+        
     })
 
-    $noneInput.addEventListener('click', e => {
-        $textDecorationInput.checked = false;
-        $textLink.style.setProperty('text-decoration', 'none');
-        $noneInput.checked = true;
+    document.addEventListener('click', e => {
+        if(e.target === $noneInput) {
+            $textDecorationInput.checked = false;
+            $textLink.style.setProperty('text-decoration', 'none');
+            $noneInput.checked = true;
+        }
+        
     })
        
 }
