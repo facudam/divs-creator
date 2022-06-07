@@ -1,3 +1,4 @@
+import { changeTextColor } from "./textColor.js";
 
 export const changeParagraphCard = (texAreaParagraph, paragraphCard) => {
     const $textAreaParagraph = document.getElementById(texAreaParagraph),
@@ -9,4 +10,7 @@ export const changeParagraphCard = (texAreaParagraph, paragraphCard) => {
         }
         
     })
+
+    changeTextColor('p-card', 'paragraph-color');
+    
 }

@@ -57,9 +57,9 @@
 
         <div class="card-controls">
             <div class="title-controls">
-                <div class="title-controls__btn">Structure styles</div>
-                <div class="title-controls__btn">Content</div>
-                <div class="title-controls__btn">Color styles</div>
+                <div id="structure" class="title-controls__btn">Structure styles</div>
+                <div id="content" class="title-controls__btn">Content</div>
+                <div id="color" class="title-controls__btn">Color styles</div>
             </div>
 
             <div class="structure-styles">
@@ -100,7 +100,7 @@
                     <form>
                         <div class="input-shadow">
                             <label for="color">Choose a shadow-color</label>
-                            <input id="color" type="color" value="#808080">
+                            <input id="color-shadow" type="color" value="#808080">
                         </div>
 
                         <div class="input-shadow">
@@ -144,7 +144,7 @@
                             <option>h2</option>
                             <option selected>h3</option>
                             <option>h4</option>
-                            <option</option>
+                            <option>h5</option>
                             <option>h6</option>
                         </select>
                     </form>
@@ -179,6 +179,28 @@
                 </div>
             </div>
             
+            <div class="colors-styles">
+                <form>
+                    <div class="color-styles__controls">
+                        <label for="background-color-card">Background-color: </label>
+                        <input id="background-color-card" type="color" value="#ffffff">
+                    </div>
+                    <div class="color-styles__controls">
+                        <label for="title-color">Title-color: </label>
+                        <input id="title-color" type="color" value="#000000">
+                    </div>
+                    <div class="color-styles__controls">
+                        <label for="paragraph-color">Paragraph-color: </label>
+                        <input id="paragraph-color" type="color" value="#000000">
+                    </div>
+                    <div class="color-styles__controls">
+                        <label for="link-color">Link-card-color: </label>
+                        <input id="link-color" type="color" value="#0f7abe">
+                    </div>
+                    
+                </form>
+            </div>
+
         </div>
 
         <div class="codigo">

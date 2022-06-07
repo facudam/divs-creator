@@ -294,6 +294,7 @@ nav{
 .third-title {
     text-align: center;
     padding: var(--padding-text-inside);
+    color: #000;
 }
 
 .p-card{
@@ -306,6 +307,7 @@ nav{
     text-align: center;
     font-weight: 700;
     text-decoration: none;
+    color: #0f7abe;
     padding-bottom: var(--padding-text-inside);
 }
 
@@ -315,6 +317,7 @@ nav{
     margin-top: 40px;/*Esto hay que borrarlo en el modo desktop*/
     width: 100%;
     max-width: 500px;
+    height: 487px;
 }
 
 @media screen and (min-width: 965px) {
@@ -428,9 +431,10 @@ nav{
 /* Content-styles css*/
 
 .content-styles{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
+    padding-top: 15px;
 }
 
 .title-content-form{
@@ -532,8 +536,28 @@ nav{
 
 }
 
+/* ++++++++ Color Styles +++++++++++ */
 
+.colors-styles {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+}
 
+.color-styles__controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.color-styles__controls label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
 
 

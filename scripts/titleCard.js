@@ -1,3 +1,4 @@
+import { changeTextColor } from "./textColor.js";
 
 export const changeTitleCard = ( textAreaTitle, titleCard ) => {
     const $textArea = document.getElementById(textAreaTitle),
@@ -10,4 +11,6 @@ export const changeTitleCard = ( textAreaTitle, titleCard ) => {
         }
         
     })
+
+    changeTextColor('third-title', 'title-color');
 }
