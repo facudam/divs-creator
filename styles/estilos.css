@@ -208,6 +208,8 @@ nav{
     .nav-menu .links-menu li{
         margin-left: 40px;
     }
+
+    
 }
 
 /* +++++++++++++++++++++++++ Fin del media screen ++++++++++++++++++++++++++ */
@@ -320,11 +322,6 @@ nav{
     height: 487px;
 }
 
-@media screen and (min-width: 965px) {
-    .card-controls{
-        margin-top: 0;
-    }
-}
 
 .title-controls{
     display: flex;
@@ -525,19 +522,33 @@ nav{
 }
 
 
-/* Clase para el contenedor de codigo*/
+/* Clase para el contenedor de codigo de simple-card*/
 
 .codigo{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
     max-width: 1300px;
     background-color: var(--body-color);
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-/* */
-.html-codigo{
-    width: 100%; 
+
+.show.code {
+    width: 100%;
+}
+
+/* html contenedor simple card */
+.html-codigo {
+    width: 100%;
+    margin-bottom: 10px;
     
+}
+
+.css-codigo {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .code-title{
@@ -548,7 +559,16 @@ nav{
 }
 .html-inserted{
     background-color: #fff;
-    max-height: 300px;
+    max-height: 191px;
+    overflow: auto;
+    padding: 10px ;
+    font-weight: bold;
+    
+}
+/* css-container simple card */
+.css-inserted{
+    background-color: #fff;
+    max-height: 191px;
     overflow: auto;
     padding: 10px ;
     font-weight: bold;
@@ -579,7 +599,23 @@ nav{
 }
 
 
+@media screen and (min-width: 965px) {
+    .card-controls{
+        margin-top: 0;
+    }
 
+    .codigo {
+        flex-direction: row;
+    }
+
+    .html-codigo {
+        width: 70%;
+    }
+
+    .css-codigo {
+        width: 30%;
+    }
+}
 
 
 

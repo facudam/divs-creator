@@ -1,5 +1,5 @@
 
-export const InsertingHtmlSimpleCard = (htmlPage, href, imageSrc, htag,  title, paragraph, readMore, inputTitle, inputParagraph, inputTextLink) => {
+export const insertingHtmlSimpleCard = (htmlPage, href, imageSrc, htag,  title, paragraph, readMore, inputTitle, inputParagraph, inputTextLink) => {
 
     //Declaración de variables del DOM:
     const htmlBox = document.querySelector(htmlPage),

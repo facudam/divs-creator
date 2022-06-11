@@ -12,7 +12,8 @@ import { changeTextLinkCard } from "./textLink.js";
 import { changeTitleCard } from "./titleCard.js";
 import { changeTextColor } from "./textColor.js";
 import { getControls } from "./stylesButtons.js";
-import { InsertingHtmlSimpleCard } from "./htmlSimpleCard.js";
+import { insertingHtmlSimpleCard } from "./htmlSimpleCard.js";
+import { insertingCssSimpleCard } from "./cssSimpleCard.js";
 
 
 document.addEventListener('DOMContentLoaded', e => {
@@ -51,7 +52,11 @@ document.addEventListener('DOMContentLoaded', e => {
 
 
     //Agregando el codigo html de simple-card en index.html
-    InsertingHtmlSimpleCard('.html-inserted', 'url-link', 'url-image', 'h-title', 'third-title', 'p-card', 'read-more', 'title-area', 'paragraph-area', 'text-link');
+    insertingHtmlSimpleCard('.html-inserted', 'url-link', 'url-image', 'h-title', 'third-title', 'p-card', 'read-more', 'title-area', 'paragraph-area', 'text-link');
+    //Agrengando css de simple card:
+    insertingCssSimpleCard('.css-inserted');
+
+    
 })
 
 
