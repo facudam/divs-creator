@@ -13,4 +13,5 @@ export const changeParagraphCard = (texAreaParagraph, paragraphCard) => {
 
     changeTextColor('p-card', 'paragraph-color');
     
+    
 }

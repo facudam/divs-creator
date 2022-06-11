@@ -12,6 +12,7 @@ import { changeTextLinkCard } from "./textLink.js";
 import { changeTitleCard } from "./titleCard.js";
 import { changeTextColor } from "./textColor.js";
 import { getControls } from "./stylesButtons.js";
+import { InsertingHtmlSimpleCard } from "./htmlSimpleCard.js";
 
 
 document.addEventListener('DOMContentLoaded', e => {
@@ -47,6 +48,10 @@ document.addEventListener('DOMContentLoaded', e => {
     changeTextColor('p-card', 'paragraph-color');
 
     changeTextColor('read-more', 'link-color');
+
+
+    //Agregando el codigo html de simple-card en index.html
+    InsertingHtmlSimpleCard('.html-inserted', 'url-link', 'url-image', 'h-title', 'third-title', 'p-card', 'read-more', 'title-area', 'paragraph-area', 'text-link');
 })
 
 
