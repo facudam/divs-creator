@@ -300,7 +300,7 @@ nav{
 }
 
 .p-card{
-    padding: 0 var(--padding-text-inside) var(--padding-text-inside) var(--padding-text-inside);
+    padding: var(--padding-text-inside);
     text-align: center;
 }
 
@@ -309,7 +309,7 @@ nav{
     text-align: center;
     font-weight: 700;
     text-decoration: none;
-    color: #0f7abe;
+    color: rgb(15, 122, 190);
     padding-bottom: var(--padding-text-inside);
 }
 
@@ -526,7 +526,7 @@ nav{
 
 .codigo{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 40px;
     max-width: 1300px;
     background-color: var(--body-color);
     padding: 10px;
@@ -606,6 +606,7 @@ nav{
 
     .codigo {
         flex-direction: row;
+        margin-top: 50px;
     }
 
     .html-codigo {

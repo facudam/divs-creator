@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', e => {
     //Agregando el codigo html de simple-card en index.html
     insertingHtmlSimpleCard('.html-inserted', 'url-link', 'url-image', 'h-title', 'third-title', 'p-card', 'read-more', 'title-area', 'paragraph-area', 'text-link');
     //Agrengando css de simple card:
-    insertingCssSimpleCard('.css-inserted');
+    insertingCssSimpleCard('.css-inserted', 'top-left', 'top-right', 'bottom-left', 'bottom-right', 'color-shadow', 'horizontal-shadow', 'vertical-shadow', 'blur-radius', 'spread-radius', 'background-color-card', 'padding-texts', 'title-color', 'paragraph-color', 'link-color', 'text-decoration-radio', 'disabled-radio');
 
     
 })
