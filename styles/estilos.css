@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
 *{
     margin: 0;
@@ -255,8 +256,7 @@ nav{
 
 .first-div-creator{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     width: var(--width-90);
     max-width: 1400px;
@@ -267,7 +267,13 @@ nav{
     margin-bottom: var(--margin-top-section);
 }
 
-
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /* Primera card: Simple card styles*/
 .simple-card{
@@ -521,13 +527,40 @@ nav{
     margin-right: 15px;
 }
 
+/* mostrar-codigo div */
+
+.show-code {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 55px 0 0 0;
+    padding: 7px 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--principal-logo-color)
+    
+}
+
+.show-code p {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-family: 'Fascinate', cursive;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.show-code img {
+    width: 30px;
+    
+}
 
 /* Clase para el contenedor de codigo de simple-card*/
 
 .codigo{
     width: 100%;
-    margin-top: 40px;
-    max-width: 1300px;
+    
+    max-width: 1100px;
     background-color: var(--body-color);
     padding: 10px;
     display: flex;
@@ -606,7 +639,6 @@ nav{
 
     .codigo {
         flex-direction: row;
-        margin-top: 50px;
     }
 
     .html-codigo {

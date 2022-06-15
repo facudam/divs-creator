@@ -19,11 +19,11 @@ export const insertingHtmlSimpleCard = (htmlPage, href, imageSrc, htag,  title, 
     //A continuación creamos una variable con el contenido html-code para añadir a nuestro sitio web
     let html = `<div class="simple-card">
         <div class="img-container">
-            <a id="card-image" href="${$href.value}" target="_blank" rel="noopener noreferrer"><img id="image-card" src="${$imageSrc.value}" alt=""></a>
-            <${$htag.value} id="third-title" class="third-title">${$title.innerHTML}</${$htag.value}>
+            <a href="${$href.value}" target="_blank" rel="noopener noreferrer"><img src="${$imageSrc.value}" alt=""></a>
+            <${$htag.value} class="third-title">${$title.innerHTML}</${$htag.value}>
         </div>
-        <p id="p-card" class="p-card">${$paragraph.innerHTML}</p>
-        <a id="read-more" class="read-more" href="${$href.value}" target="_blank" rel="noopener noreferrer">${$readMore.innerHTML}</a>
+        <p class="p-card">${$paragraph.innerHTML}</p>
+        <a class="read-more" href="${$href.value}" target="_blank" rel="noopener noreferrer">${$readMore.innerHTML}</a>
     </div>
     `;
 
@@ -37,11 +37,11 @@ export const insertingHtmlSimpleCard = (htmlPage, href, imageSrc, htag,  title, 
         if (e.target === $href || e.target === $imageSrc || e.target === $htag) {
             html = `<div class="simple-card">
         <div class="img-container">
-            <a id="card-image" href="${$href.value}" target="_blank" rel="noopener noreferrer"><img id="image-card" src="${$imageSrc.value}" alt=""></a>
-            <${$htag.value} id="third-title" class="third-title">${$title.innerHTML}</${$htag.value}>
+            <a href="${$href.value}" target="_blank" rel="noopener noreferrer"><img src="${$imageSrc.value}" alt=""></a>
+            <${$htag.value} class="third-title">${$title.innerHTML}</${$htag.value}>
         </div>
-        <p id="p-card" class="p-card">${$paragraph.innerHTML}</p>
-        <a id="read-more" class="read-more" href="${$href.value}" target="_blank" rel="noopener noreferrer">${$readMore.innerHTML}</a>
+        <p class="p-card">${$paragraph.innerHTML}</p>
+        <a class="read-more" href="${$href.value}" target="_blank" rel="noopener noreferrer">${$readMore.innerHTML}</a>
     </div>
     `;
 
@@ -60,11 +60,11 @@ export const insertingHtmlSimpleCard = (htmlPage, href, imageSrc, htag,  title, 
 
             html = `<div class="simple-card">
         <div class="img-container">
-            <a id="card-image" href="${$href.value}" target="_blank" rel="noopener noreferrer"><img id="image-card" src="${$imageSrc.value}" alt=""></a>
-            <${$htag.value} id="third-title" class="third-title">${$title.innerHTML}</${$htag.value}>
+            <a href="${$href.value}" target="_blank" rel="noopener noreferrer"><img src="${$imageSrc.value}" alt=""></a>
+            <${$htag.value} class="third-title">${$title.innerHTML}</${$htag.value}>
         </div>
-        <p id="p-card" class="p-card">${$paragraph.innerHTML}</p>
-        <a id="read-more" class="read-more" href="${$href.value}" target="_blank" rel="noopener noreferrer">${$readMore.innerHTML}</a>
+        <p class="p-card">${$paragraph.innerHTML}</p>
+        <a class="read-more" href="${$href.value}" target="_blank" rel="noopener noreferrer">${$readMore.innerHTML}</a>
     </div>
     `;
 

@@ -45,164 +45,168 @@
     <h2 class="second-title">Very simple card</h2>
     <!--Creamos la primera sección con la primera plantilla card-->
     <section class="first-div-creator">
-        
-        <div class="simple-card">
-            <div class="img-container">
-                <a id="card-image" href="#" target="_blank" rel="noopener noreferrer"><img id="image-card" src="https://cdn.pixabay.com/photo/2018/02/23/09/03/human-3175027_960_720.jpg" alt=""></a>
-                <h3 id="third-title" class="third-title">Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+        <div class="container">
+            <div class="simple-card">
+                <div class="img-container">
+                    <a id="card-image" href="#" target="_blank" rel="noopener noreferrer"><img id="image-card" src="https://cdn.pixabay.com/photo/2018/02/23/09/03/human-3175027_960_720.jpg" alt=""></a>
+                    <h3 id="third-title" class="third-title">Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+                </div>
+                <p id="p-card" class="p-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sequi, nemo fugit assumenda, inventore numquam ad iste itaque at doloribus quia?</p>
+                <a id="read-more" class="read-more" href="#" target="_blank" rel="noopener noreferrer">Read more...</a>
             </div>
-            <p id="p-card" class="p-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sequi, nemo fugit assumenda, inventore numquam ad iste itaque at doloribus quia?</p>
-            <a id="read-more" class="read-more" href="#" target="_blank" rel="noopener noreferrer">Read more...</a>
-        </div>
-
-        <div class="card-controls">
-            <div class="title-controls">
-                <div id="structure" class="title-controls__btn">Structure styles</div>
-                <div id="content" class="title-controls__btn">Content</div>
-                <div id="color" class="title-controls__btn">Color styles</div>
-            </div>
-
-            <div class="structure-styles">
-                <div class="border-radius-container">
-                    <p class="structure-p">Border-radius:</p>
-                    <form>
-                        <div class="flex-container">
-                            <div class="input-borders">
-                                <label for="top-left">Top-left</label>
-                                <input id="top-left" type="number" value="10">
+            <div class="card-controls">
+                <div class="title-controls">
+                    <div id="structure" class="title-controls__btn">Structure styles</div>
+                    <div id="content" class="title-controls__btn">Content</div>
+                    <div id="color" class="title-controls__btn">Color styles</div>
+                </div>
+    
+                <div class="structure-styles">
+                    <div class="border-radius-container">
+                        <p class="structure-p">Border-radius:</p>
+                        <form>
+                            <div class="flex-container">
+                                <div class="input-borders">
+                                    <label for="top-left">Top-left</label>
+                                    <input id="top-left" type="number" value="10">
+                                </div>
+    
+                                <div class="input-borders">
+                                    <label for="top-right">Top-right</label>
+                                    <input id="top-right" type="number" value="10">
+                                </div>
                             </div>
-
-                            <div class="input-borders">
-                                <label for="top-right">Top-right</label>
-                                <input id="top-right" type="number" value="10">
+    
+                            <div class="flex-container">
+                                <div class="input-borders">
+                                    <label for="bottom-left">Bottom-left</label>
+                                    <input id="bottom-left" type="number" value="10">
+                                </div>
+    
+                                <div class="input-borders">
+                                    <label for="bottom-right">Bottom-right</label>
+                                    <input id="bottom-right" type="number" value="10">
+                                </div> 
                             </div>
-                        </div>
+                            
+    
+                                             
+                        </form>
+                    </div>
 
-                        <div class="flex-container">
-                            <div class="input-borders">
-                                <label for="bottom-left">Bottom-left</label>
-                                <input id="bottom-left" type="number" value="10">
+                    <div class="box-shadow-container">
+                        <p class="structure-p">Box-shadow:</p>
+                        <form>
+                            <div class="input-shadow">
+                                <label for="color">Choose a shadow-color</label>
+                                <input id="color-shadow" type="color" value="#808080">
                             </div>
-
-                            <div class="input-borders">
-                                <label for="bottom-right">Bottom-right</label>
-                                <input id="bottom-right" type="number" value="10">
-                            </div> 
-                        </div>
-                        
-
-                                         
-                    </form>
-
-                </div>
-                <div class="box-shadow-container">
-                    <p class="structure-p">Box-shadow:</p>
-                    <form>
-                        <div class="input-shadow">
-                            <label for="color">Choose a shadow-color</label>
-                            <input id="color-shadow" type="color" value="#808080">
-                        </div>
-
-                        <div class="input-shadow">
-                            <label for="horizontal-shadow">Horizontal shadow</label>
-                            <input id="horizontal-shadow" type="range" min="-200" max="200" value="1">
-                        </div>
-
-                        <div class="input-shadow">
-                            <label for="vertical-shadow">Vertical shadow</label>
-                            <input id="vertical-shadow" type="range" min="-200" max="200" value="2">
-                        </div>
-
-                        <div class="input-shadow">
-                            <label for="blur-radius">Blur radius</label>
-                            <input id="blur-radius" type="range" min="-200" max="200" value="10">
-                        </div>
-
-                        <div class="input-shadow">
-                            <label for="spread-radius">Spread radius</label>
-                            <input id="spread-radius" type="range" min="-200" max="200" value="1">
-                        </div>
-
-                    </form>
-                </div>
-                <div class="padding-text">
-                    <form>
-                        <label class="structure-label" for="padding-texts">Padding texts:</label>
-                        <input id="padding-texts" type="range" min="0" max="50" value="12">
-                    </form>
-                </div>
-                
-            </div>
-
-            <div class="content-styles">
-                <div class="title-content">
-                    <p class="structure-p">Title Properties</p>
-                    <form class="title-content-form">
-                        <textarea name="title-area" id="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
-                        <select name="h-title" id="h-title">
-                            <option>h1</option>
-                            <option>h2</option>
-                            <option selected>h3</option>
-                            <option>h4</option>
-                            <option>h5</option>
-                            <option>h6</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="paragraph-area">
-                    <p class="structure-p">Card Text</p>
-                    <textarea name="paragraph-area" id="paragraph-area" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
-                </div>
-                <div class="image-link">
-                    <p class="structure-p">Card image</p>
-                    <input id="url-image" type="url" placeholder="Add url image">
-                </div>
-                <div class="link-area">
-                    <p class="structure-p">Links data</p>
-                    <form class="link-area-form">
-                        <div class="link-area-form__inputs">
-                            <input id="url-link" type="url" placeholder="Add your link-card here">
-                            <input id="text-link" type="text" placeholder="Text-link">
-                        </div>
-                        
-                        <div class="radio-inputs">
-                            <label for="text-decoration-radio">
-                            <input id="text-decoration-radio" type="radio" value="active">Text-decoration
-                            </label>
-
-                            <label for="disabled-radio">
-                                <input id="disabled-radio" type="radio" value="disabled" checked> None
-                            </label>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-            
-            <div class="colors-styles">
-                <form>
-                    <div class="color-styles__controls">
-                        <label for="background-color-card">Background-color: </label>
-                        <input id="background-color-card" type="color" value="#ffffff">
+    
+                            <div class="input-shadow">
+                                <label for="horizontal-shadow">Horizontal shadow</label>
+                                <input id="horizontal-shadow" type="range" min="-200" max="200" value="1">
+                            </div>
+    
+                            <div class="input-shadow">
+                                <label for="vertical-shadow">Vertical shadow</label>
+                                <input id="vertical-shadow" type="range" min="-200" max="200" value="2">
+                            </div>
+    
+                            <div class="input-shadow">
+                                <label for="blur-radius">Blur radius</label>
+                                <input id="blur-radius" type="range" min="-200" max="200" value="10">
+                            </div>
+    
+                            <div class="input-shadow">
+                                <label for="spread-radius">Spread radius</label>
+                                <input id="spread-radius" type="range" min="-200" max="200" value="1">
+                            </div>
+    
+                        </form>
                     </div>
-                    <div class="color-styles__controls">
-                        <label for="title-color">Title-color: </label>
-                        <input id="title-color" type="color" value="#000000">
-                    </div>
-                    <div class="color-styles__controls">
-                        <label for="paragraph-color">Paragraph-color: </label>
-                        <input id="paragraph-color" type="color" value="#000000">
-                    </div>
-                    <div class="color-styles__controls">
-                        <label for="link-color">Link-card-color: </label>
-                        <input id="link-color" type="color" value="#0f7abe">
+                    <div class="padding-text">
+                        <form>
+                            <label class="structure-label" for="padding-texts">Padding texts:</label>
+                            <input id="padding-texts" type="range" min="0" max="50" value="12">
+                        </form>
                     </div>
                     
-                </form>
+                </div>
+    
+                <div class="content-styles">
+                    <div class="title-content">
+                        <p class="structure-p">Title Properties</p>
+                        <form class="title-content-form">
+                            <textarea name="title-area" id="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
+                            <select name="h-title" id="h-title">
+                                <option>h1</option>
+                                <option>h2</option>
+                                <option selected>h3</option>
+                                <option>h4</option>
+                                <option>h5</option>
+                                <option>h6</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="paragraph-area">
+                        <p class="structure-p">Card Text</p>
+                        <textarea name="paragraph-area" id="paragraph-area" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
+                    </div>
+                    <div class="image-link">
+                        <p class="structure-p">Card image</p>
+                        <input id="url-image" type="url" placeholder="Add url image">
+                    </div>
+                    <div class="link-area">
+                        <p class="structure-p">Links data</p>
+                        <form class="link-area-form">
+                            <div class="link-area-form__inputs">
+                                <input id="url-link" type="url" placeholder="Add your link-card here">
+                                <input id="text-link" type="text" placeholder="Text-link">
+                            </div>
+                            
+                            <div class="radio-inputs">
+                                <label for="text-decoration-radio">
+                                <input id="text-decoration-radio" type="radio" value="active">Text-decoration
+                                </label>
+    
+                                <label for="disabled-radio">
+                                    <input id="disabled-radio" type="radio" value="disabled" checked> None
+                                </label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="colors-styles">
+                    <form>
+                        <div class="color-styles__controls">
+                            <label for="background-color-card">Background-color: </label>
+                            <input id="background-color-card" type="color" value="#ffffff">
+                        </div>
+                        <div class="color-styles__controls">
+                            <label for="title-color">Title-color: </label>
+                            <input id="title-color" type="color" value="#000000">
+                        </div>
+                        <div class="color-styles__controls">
+                            <label for="paragraph-color">Paragraph-color: </label>
+                            <input id="paragraph-color" type="color" value="#000000">
+                        </div>
+                        <div class="color-styles__controls">
+                            <label for="link-color">Link-card-color: </label>
+                            <input id="link-color" type="color" value="#0f7abe">
+                        </div>
+                        
+                    </form>
+                </div>
+    
             </div>
-
         </div>
-
+        
+        <div id="show-code" class="show-code">
+            <p class="show-code__title">GET CODE</p>
+            <img src="imagenes/flecha.svg" alt="">
+        </div>
         
         <div class="codigo">
             
