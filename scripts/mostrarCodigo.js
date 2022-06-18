@@ -1,7 +1,4 @@
 
-
-
-
 export const mostrarCodigo = (codeContainer, codeButton, pTitle, span) => {
     const $codeContainer = document.getElementById(codeContainer),
         $codeButton = document.getElementById(codeButton),
