@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 *{
     margin: 0;
@@ -22,6 +22,7 @@
     --card-width: 300px;
     --card-height: 400px;
     --padding-text-inside: 12px;
+    --mostrar-code: 250px;
 
 }
 
@@ -544,15 +545,22 @@ nav{
 }
 
 .show-code p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900;
     color: rgb(255, 255, 255);
-    font-family: 'Fascinate', cursive;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 2px #000;
 }
 
-.show-code img {
-    width: 30px;
+.show-code span {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: var(--principal-logo-color);
     
 }
 
@@ -567,7 +575,7 @@ nav{
     flex-direction: column;
     gap: 10px;
     overflow: hidden;
-    
+    transition: height .3s ease;
 }
 
 .show-code {
@@ -576,8 +584,8 @@ nav{
 
 /*  clase para funcion toggle del botón mostrar codigo*/
 .mostrar-code {
+    height: var(--mostrar-code);
     padding: 10px;
-    height: 100%;
 }
 
 /* html contenedor simple card */
