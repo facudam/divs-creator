@@ -17,6 +17,7 @@ import { insertingCssSimpleCard } from "./cssSimpleCard.js";
 import { mostrarCodigo } from "./mostrarCodigo.js";
 
 
+
 document.addEventListener('DOMContentLoaded', e => {
 
     mostrarMenuNav('boton-hamburguesa', 'links-menu');
@@ -58,7 +59,12 @@ document.addEventListener('DOMContentLoaded', e => {
     insertingCssSimpleCard('.css-inserted', 'top-left', 'top-right', 'bottom-left', 'bottom-right', 'color-shadow', 'horizontal-shadow', 'vertical-shadow', 'blur-radius', 'spread-radius', 'background-color-card', 'padding-texts', 'title-color', 'paragraph-color', 'link-color', 'text-decoration-radio', 'disabled-radio');
 
     // Botón mostrar codigo:
-    mostrarCodigo('simple-card-code', 'show-code', 'p-title-simple-card', 'simple-card-arrow')
+    mostrarCodigo('simple-card-code', 'show-code', 'p-title-simple-card', 'simple-card-arrow');
+
+    // +++++++++++++ FULL-CARD FUNCIONES ++++++++++++++ //
+
+    changeBorderRadius('.full-card', 'top-left-full', 'top-right-full', 'bottom-left-full', 'bottom-right-full');
+   
 })
 
 

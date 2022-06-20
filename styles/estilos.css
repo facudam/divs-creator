@@ -23,6 +23,7 @@
     --card-height: 400px;
     --padding-text-inside: 12px;
     --mostrar-code: 250px;
+    --button-size-full: 100px;
 
 }
 
@@ -405,7 +406,7 @@ nav{
     text-align: center;
 }
 
-.box-shadow-container #color-shadow{
+.box-shadow-container .color-shadow{
     margin: auto;
     margin-bottom: 12px;
     margin-top: 5px;
@@ -680,6 +681,10 @@ nav{
     background-size: cover;
     background-position: center;
     letter-spacing: 1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     
 }
 
@@ -711,13 +716,13 @@ nav{
 .full-card__a {
     color: rgb(255, 255, 255);
     background-color: #0f7abe;
-    width: 100px;
+    width: var(--button-size-full);
     text-align: center;
     font-weight: 900;
     padding: 10px 0px;
     text-decoration: none;
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - var(--button-size-full) / 2);
     bottom: -45%;
     transition: bottom .3s ease;
     cursor: pointer;
@@ -729,7 +734,7 @@ nav{
 }
 
 .full-card:hover .full-card__paragraph {
-    bottom: 27%;
+    bottom: 29%;
 }
 
 .full-card:hover .full-card__a {
