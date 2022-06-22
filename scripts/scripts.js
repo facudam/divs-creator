@@ -15,6 +15,7 @@ import { getControls } from "./stylesButtons.js";
 import { insertingHtmlSimpleCard } from "./htmlSimpleCard.js";
 import { insertingCssSimpleCard } from "./cssSimpleCard.js";
 import { mostrarCodigo } from "./mostrarCodigo.js";
+import { changeButtonSize } from "./buttonSize.js";
 
 
 
@@ -61,9 +62,17 @@ document.addEventListener('DOMContentLoaded', e => {
     // Botón mostrar codigo:
     mostrarCodigo('simple-card-code', 'show-code', 'p-title-simple-card', 'simple-card-arrow');
 
+    
+
     // +++++++++++++ FULL-CARD FUNCIONES ++++++++++++++ //
 
     changeBorderRadius('.full-card', 'top-left-full', 'top-right-full', 'bottom-left-full', 'bottom-right-full');
+
+    changeBoxShadow('.full-card', 'color-shadow-full', 'horizontal-shadow-full', 'vertical-shadow-full', 'blur-radius-full', 'spread-radius-full');
+
+    changeButtonSize('.full-card', '--button-size-full', 'button-size-full')
+
+    getControls('structure-full', 'content-full', 'color-full', '.structure-styles-full', '.content-styles-full', '.colors-styles-full');
    
 })
 
