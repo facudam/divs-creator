@@ -451,7 +451,7 @@ nav{
 }
 
 
-#title-area{
+.title-area{
     width: 85%;
     height: 50px;
     resize: none;
@@ -469,16 +469,16 @@ nav{
 
 /* Paragraph styles*/
 
-.paragraph-area{
-    margin-bottom: 10px;
-}
 
-#paragraph-area{
+
+.paragraph-area-class{
     width: 100%;
     height: 100px;
     padding: 15px;
     resize: none;
     scrollbar-width: none;
+    margin-bottom: 10px;
+    
 }
 
 /*  Card-image styles*/
@@ -510,7 +510,7 @@ nav{
     margin-bottom: 15px;
 }
 
-#text-link{
+.text-link{
     width: 30%;
     height: 30px;
     padding-left: 15px;
@@ -677,7 +677,7 @@ nav{
     overflow: hidden;
     position: relative;
     box-shadow: 0px 0px 1px 1px #142d49;
-    background-image: url('https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844226__340.png');
+    background: linear-gradient(rgba(51, 51, 56, 0.5), rgba(51, 51, 56, 0.5)), url('https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844226__340.png');
     background-size: cover;
     background-position: center;
     letter-spacing: 1px;
@@ -690,6 +690,7 @@ nav{
 
 .full-card__title {
     position: absolute;
+    width: 90% ;
     top: 75%;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -698,14 +699,16 @@ nav{
     font-family: 'Akshar', sans-serif;
     font-size: 23px;
     margin: 10px;
+    
 }
 
 .full-card__paragraph {
     position: absolute;
+    width: 90%;
     color: #fff;
     text-align: center;
-    bottom: -35%;
-    transition: bottom .3s ease;
+    top: 100%;
+    transition: top .3s ease;
     line-height: 25px;
     text-shadow: 1px 1px 2px #141414;
     font-weight: 900;
@@ -734,7 +737,7 @@ nav{
 }
 
 .full-card:hover .full-card__paragraph {
-    bottom: 29%;
+    top: 40%;
 }
 
 .full-card:hover .full-card__a {

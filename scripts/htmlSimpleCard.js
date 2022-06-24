@@ -56,8 +56,6 @@ export const insertingHtmlSimpleCard = (htmlPage, href, imageSrc, htag,  title, 
 
         if (e.target === $inputTitle || e.target === $inputParagraph || e.target === $inputTextLink) {
 
-            console.log('FUNCIONA EL KEYUP')
-
             html = `<div class="simple-card">
         <div class="img-container">
             <a href="${$href.value}" target="_blank" rel="noopener noreferrer"><img src="${$imageSrc.value}" alt=""></a>

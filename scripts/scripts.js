@@ -73,6 +73,11 @@ document.addEventListener('DOMContentLoaded', e => {
     changeButtonSize('.full-card', '--button-size-full', 'button-size-full')
 
     getControls('structure-full', 'content-full', 'color-full', '.structure-styles-full', '.content-styles-full', '.colors-styles-full');
+
+    changeTitleCard('title-area-full', '.full-card__title');
+    changeParagraphCard('paragraph-area-full', 'paragraph-full')
+
+    changeTextLinkCard('area-text-link-full', 'text-link-full')
    
 })
 

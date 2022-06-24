@@ -137,7 +137,7 @@
                     <div class="title-content">
                         <p class="structure-p">Title Properties</p>
                         <form class="title-content-form">
-                            <textarea name="title-area" id="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
+                            <textarea name="title-area" id="title-area" class="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
                             <select name="h-title" id="h-title">
                                 <option>h1</option>
                                 <option>h2</option>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="paragraph-area">
                         <p class="structure-p">Card Text</p>
-                        <textarea name="paragraph-area" id="paragraph-area" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
+                        <textarea name="paragraph-area" id="paragraph-area" class="paragraph-area-class" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
                     </div>
                     <div class="image-link">
                         <p class="structure-p">Card image</p>
@@ -161,7 +161,7 @@
                         <form class="link-area-form">
                             <div class="link-area-form__inputs">
                                 <input id="url-link" type="url" placeholder="Add your link-card here">
-                                <input id="text-link" type="text" placeholder="Text-link">
+                                <input id="text-link" class="text-link" type="text" placeholder="Text-link">
                             </div>
                             
                             <div class="radio-inputs">
@@ -225,9 +225,9 @@
     <section class="first-div-creator">
         <div class="container">
             <div class="full-card">
-                <h3 class="full-card__title">Lorem ipsum dolor sit amet consectetur.</h3>
-                <p class="full-card__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, blanditiis nisi! Harum inventore laudantium.</p>
-                <a class="full-card__a" href="#" target="_blank" rel="noopener noreferrer">Explore</a>
+                <h3 class="full-card__title" id="full-card__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                <p class="full-card__paragraph" id="paragraph-full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, blanditiis nisi! Harum inventore laudantium.</p>
+                <a id="text-link-full" class="full-card__a" href="#" target="_blank" rel="noopener noreferrer">Explore</a>
             </div>
             <div class="card-controls">
                 <div class="title-controls">
@@ -313,7 +313,7 @@
                     <div class="title-content">
                         <p class="structure-p">Title Properties</p>
                         <form class="title-content-form">
-                            <textarea name="title-area" id="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
+                            <textarea name="title-area" id="title-area-full" class="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
                             <select name="h-title" id="h-title">
                                 <option>h1</option>
                                 <option>h2</option>
@@ -326,7 +326,7 @@
                     </div>
                     <div class="paragraph-area">
                         <p class="structure-p">Card Text</p>
-                        <textarea name="paragraph-area" id="paragraph-area" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
+                        <textarea name="paragraph-area" id="paragraph-area-full" class="paragraph-area-class" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
                     </div>
                     <div class="image-link">
                         <p class="structure-p">Card image</p>
@@ -337,7 +337,7 @@
                         <form class="link-area-form">
                             <div class="link-area-form__inputs">
                                 <input id="url-link" type="url" placeholder="Add your link-card here">
-                                <input id="text-link" type="text" placeholder="Text-link">
+                                <input id="area-text-link-full" class="text-link" type="text" placeholder="Text-link">
                             </div>
                             
                             <div class="radio-inputs">
