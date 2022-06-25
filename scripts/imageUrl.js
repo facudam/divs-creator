@@ -1,4 +1,4 @@
-
+// Esta función funciona únicamente si existe un elemento img en el html.
 
 export const addImageUrl = (imageInput, imageCard) => {
     const $imageInput = document.getElementById(imageInput),

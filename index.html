@@ -154,13 +154,13 @@
                     </div>
                     <div class="image-link">
                         <p class="structure-p">Card image</p>
-                        <input id="url-image" type="url" placeholder="Add url image">
+                        <input id="url-image" class="url-image" type="url" placeholder="Add url image">
                     </div>
                     <div class="link-area">
                         <p class="structure-p">Links data</p>
                         <form class="link-area-form">
                             <div class="link-area-form__inputs">
-                                <input id="url-link" type="url" placeholder="Add your link-card here">
+                                <input id="url-link" class="url-link" type="url" placeholder="Add your link-card here">
                                 <input id="text-link" class="text-link" type="text" placeholder="Text-link">
                             </div>
                             
@@ -314,7 +314,7 @@
                         <p class="structure-p">Title Properties</p>
                         <form class="title-content-form">
                             <textarea name="title-area" id="title-area-full" class="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
-                            <select name="h-title" id="h-title">
+                            <select name="h-title-full" id="h-title-full">
                                 <option>h1</option>
                                 <option>h2</option>
                                 <option selected>h3</option>
@@ -330,25 +330,17 @@
                     </div>
                     <div class="image-link">
                         <p class="structure-p">Card image</p>
-                        <input id="url-image" type="url" placeholder="Add url image">
+                        <input id="url-image-full" class="url-image" type="url" placeholder="Add url image">
                     </div>
                     <div class="link-area">
                         <p class="structure-p">Links data</p>
                         <form class="link-area-form">
                             <div class="link-area-form__inputs">
-                                <input id="url-link" type="url" placeholder="Add your link-card here">
+                                <input id="url-link-full" class="url-link" type="url" placeholder="Add your link-card here">
                                 <input id="area-text-link-full" class="text-link" type="text" placeholder="Text-link">
                             </div>
                             
-                            <div class="radio-inputs">
-                                <label for="text-decoration-radio">
-                                <input id="text-decoration-radio" type="radio" value="active">Text-decoration
-                                </label>
-    
-                                <label for="disabled-radio">
-                                    <input id="disabled-radio" type="radio" value="disabled" checked> None
-                                </label>
-                            </div>
+                            
                             
                         </form>
                     </div>
@@ -356,21 +348,22 @@
                 
                 <div class="colors-styles colors-styles-full">
                     <form>
+                        
                         <div class="color-styles__controls">
-                            <label for="background-color-card">Background-color: </label>
-                            <input id="background-color-card" type="color" value="#ffffff">
+                            <label for="title-color-full">Title-color: </label>
+                            <input id="title-color-full" type="color" value="#ffffff">
                         </div>
                         <div class="color-styles__controls">
-                            <label for="title-color">Title-color: </label>
-                            <input id="title-color" type="color" value="#000000">
+                            <label for="paragraph-color-full">Paragraph-color: </label>
+                            <input id="paragraph-color-full" type="color" value="#ffffff">
                         </div>
                         <div class="color-styles__controls">
-                            <label for="paragraph-color">Paragraph-color: </label>
-                            <input id="paragraph-color" type="color" value="#000000">
+                            <label for="link-color-full">Link-card-color: </label>
+                            <input id="link-color-full" type="color" value="#ffffff">
                         </div>
                         <div class="color-styles__controls">
-                            <label for="link-color">Link-card-color: </label>
-                            <input id="link-color" type="color" value="#0f7abe">
+                            <label for="button-card-full">Button-card-color: </label>
+                            <input id="button-card-full" type="color" value="#0f7abe">
                         </div>
                         
                     </form>

@@ -16,6 +16,8 @@ import { insertingHtmlSimpleCard } from "./htmlSimpleCard.js";
 import { insertingCssSimpleCard } from "./cssSimpleCard.js";
 import { mostrarCodigo } from "./mostrarCodigo.js";
 import { changeButtonSize } from "./buttonSize.js";
+import { changeBackgroundImage } from "./backgroundImageCard.js";
+import { changeBackgroundGradient } from "./backgroundGradient.js";
 
 
 
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     getControls('structure', 'content', 'color', '.structure-styles', '.content-styles', '.colors-styles');
 
-    replaceTitleCard('.img-container', 'third-title', 'h-title', 'third-title', 'third-title', 'title-color');
+    replaceTitleCard('.img-container', 'third-title', 'h-title', 'third-title', 'third-title', 'title-color', 1);
     
     changeBorderRadius('.simple-card','top-left', 'top-right', 'bottom-left', 'bottom-right');
 
@@ -37,7 +39,9 @@ document.addEventListener('DOMContentLoaded', e => {
 
     changeParagraphCard('paragraph-area', 'p-card');
 
-    addLinkToCard('card-image', 'read-more', 'url-link');
+    addLinkToCard('card-image', 'url-link');
+
+    addLinkToCard('read-more', 'url-link');
 
     changeTextLinkCard('text-link','read-more');
 
@@ -66,6 +70,8 @@ document.addEventListener('DOMContentLoaded', e => {
 
     // +++++++++++++ FULL-CARD FUNCIONES ++++++++++++++ //
 
+    replaceTitleCard('.full-card', 'full-card__title', 'h-title-full', 'full-card__title', 'full-card__title', 'title-color-full', 0)
+
     changeBorderRadius('.full-card', 'top-left-full', 'top-right-full', 'bottom-left-full', 'bottom-right-full');
 
     changeBoxShadow('.full-card', 'color-shadow-full', 'horizontal-shadow-full', 'vertical-shadow-full', 'blur-radius-full', 'spread-radius-full');
@@ -77,7 +83,21 @@ document.addEventListener('DOMContentLoaded', e => {
     changeTitleCard('title-area-full', '.full-card__title');
     changeParagraphCard('paragraph-area-full', 'paragraph-full')
 
-    changeTextLinkCard('area-text-link-full', 'text-link-full')
+    changeTextLinkCard('area-text-link-full', 'text-link-full');
+
+    changeBackgroundImage('.full-card', 'url-image-full');
+
+    addLinkToCard('text-link-full', 'url-link-full');
+
+    changeTextColor('full-card__title', 'title-color-full')
+
+    changeTextColor('paragraph-full', 'paragraph-color-full')
+
+    changeTextColor('text-link-full', 'link-color-full');
+
+    changeBackgroundColor('#text-link-full', 'button-card-full')
+
+    
    
 })
 
