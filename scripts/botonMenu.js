@@ -1,11 +1,8 @@
 export function mostrarMenuNav(btnHamburger, linksMenu){
-    const $hamburgerBoton = document.getElementById(btnHamburger),
-        $navMenu = document.getElementById(linksMenu);
-
-
+    
     document.addEventListener('click', (e) => {
-        if(e.target === $hamburgerBoton) {
-            $navMenu.classList.toggle('activo');
+        if(e.target.matches(btnHamburger) || e.target.matches(`${btnHamburger} *`)) {
+            document.querySelector(linksMenu).classList.toggle('activo');
         }
     });
 }

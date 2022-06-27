@@ -23,7 +23,7 @@ import { changeBackgroundGradient } from "./backgroundGradient.js";
 
 document.addEventListener('DOMContentLoaded', e => {
 
-    mostrarMenuNav('boton-hamburguesa', 'links-menu');
+    mostrarMenuNav('#boton-hamburguesa', '#links-menu');
 
     getControls('structure', 'content', 'color', '.structure-styles', '.content-styles', '.colors-styles');
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', e => {
     insertingCssSimpleCard('.css-inserted', 'top-left', 'top-right', 'bottom-left', 'bottom-right', 'color-shadow', 'horizontal-shadow', 'vertical-shadow', 'blur-radius', 'spread-radius', 'background-color-card', 'padding-texts', 'title-color', 'paragraph-color', 'link-color', 'text-decoration-radio', 'disabled-radio');
 
     // Botón mostrar codigo:
-    mostrarCodigo('simple-card-code', 'show-code', 'p-title-simple-card', 'simple-card-arrow');
+    mostrarCodigo('#simple-card-code', '.show-code', 'p-title-simple-card', 'simple-card-arrow');
 
     
 

@@ -1,8 +1,6 @@
 
 export const mostrarCodigo = (codeContainer, codeButton, pTitle, span) => {
-    const $codeContainer = document.getElementById(codeContainer),
-        $codeButton = document.getElementById(codeButton),
-        $pTitle = document.getElementById(pTitle),
+    const  $pTitle = document.getElementById(pTitle),
         $span = document.getElementById(span),
         $html = document.documentElement;
 
@@ -31,8 +29,9 @@ export const mostrarCodigo = (codeContainer, codeButton, pTitle, span) => {
     // ++++++++++++++++++++++++++++++++++++++++ //
 
     document.addEventListener('click', e => {
-        if (e.target === $codeButton) {
-            $codeContainer.classList.toggle('mostrar-code');
+        if (e.target.matches(codeButton) || e.target.matches(`${codeButton} *`)) {
+            document.querySelector(codeContainer).classList.toggle('mostrar-code');
+            console.log('hiciste click')
 
             if ( arrowChanged === false) {
             $pTitle.innerHTML = 'Hide code';
