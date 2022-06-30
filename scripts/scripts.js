@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     // +++++++++++++ FULL-CARD FUNCIONES ++++++++++++++ //
 
-    replaceTitleCard('.full-card', 'full-card__title', 'h-title-full', 'full-card__title', 'full-card__title', 'title-color-full', 0)
+    replaceTitleCard('.absolute-container', 'full-card__title', 'h-title-full', 'full-card__title', 'full-card__title', 'title-color-full', 0)
 
     changeBorderRadius('.full-card', 'top-left-full', 'top-right-full', 'bottom-left-full', 'bottom-right-full');
 

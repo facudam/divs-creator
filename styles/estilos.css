@@ -689,26 +689,26 @@ nav{
     
 }
 
-.full-card__title {
+.absolute-container {
     position: absolute;
-    width: 90% ;
-    top: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 78%;
+    transition: top .3s ease;
+}
+
+.full-card__title {
     text-align: center;
     color: rgb(255, 255, 255);
-    transition: top .3s ease;
     text-shadow: 1px 1px 2px #141414;
     font-family: 'Akshar', sans-serif;
     margin: 10px;
-    
 }
 
 .full-card__paragraph {
-    position: absolute;
-    width: 90%;
     color: #fff;
     text-align: center;
-    top: 100%;
-    transition: top .3s ease;
     line-height: 25px;
     text-shadow: 1px 1px 2px #141414;
     font-weight: 900;
@@ -724,24 +724,15 @@ nav{
     font-weight: 900;
     padding: 10px 0px;
     text-decoration: none;
-    position: absolute;
-    left: calc(50% - var(--button-size-full) / 2);
-    bottom: -45%;
     transition: bottom .3s ease;
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
+    margin: 17px;
 }
 
-.full-card:hover .full-card__title {
+
+.full-card:hover .absolute-container {
     top: 20%;
-}
-
-.full-card:hover .full-card__paragraph {
-    top: 40%;
-}
-
-.full-card:hover .full-card__a {
-    bottom: 17%;
 }
 
 
