@@ -535,38 +535,39 @@ nav{
 .show-code {
     display: flex;
     gap: 10px;
-    width: 100%;
-    max-width: 990px;
+    padding: 2px;
     margin: 55px 0 0 0;
     padding: 7px 15px;
     justify-content: center;
     align-items: center;
-    background-color: var(--principal-logo-color);
+    outline: 5px inset var(--principal-logo-color);
     cursor: pointer;
+    border-radius: 10px;
     
 }
 
 .show-code p {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 900;
-    color: rgb(255, 255, 255);
-    letter-spacing: 2px;
-    font-family: 'Lobster', cursive;
-    text-shadow: 2px 2px 2px #000;
+    color: var(--principal-logo-color);
+    text-shadow: 1px 1px 1px black;
+   
 }
 
 .show-code span {
     width: 25px;
     height: 25px;
-    background-color: white;
+    background-color: var(--principal-logo-color);
     border-radius: 50%;
     text-align: center;
     font-size: 18px;
-    color: var(--principal-logo-color);
+    color: var(--white-color)
     
 }
 
 /* Clase para el contenedor de codigo de simple-card*/
+
+
 
 .codigo{
     width: 100%;
@@ -578,10 +579,7 @@ nav{
     gap: 10px;
     overflow: hidden;
     transition: height .3s ease;
-}
-
-.show-code {
-    width: 100%;
+    margin-top: 15px;
 }
 
 /*  clase para funcion toggle del botón mostrar codigo*/
@@ -703,6 +701,7 @@ nav{
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px #141414;
     font-family: 'Akshar', sans-serif;
+    font-size: 22px;
     margin: 10px;
 }
 

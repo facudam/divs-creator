@@ -18,6 +18,8 @@ import { mostrarCodigo } from "./mostrarCodigo.js";
 import { changeButtonSize } from "./buttonSize.js";
 import { changeBackgroundImage } from "./backgroundImageCard.js";
 import { changeBackgroundGradient } from "./backgroundGradient.js";
+import { insertingHtmlFullCard } from "./codigo HTML y CSS de las card/htmlFullCard.js";
+import { insertinCssFullCard } from "./codigo HTML y CSS de las card/cssFullCard.js";
 
 
 
@@ -64,7 +66,7 @@ document.addEventListener('DOMContentLoaded', e => {
     insertingCssSimpleCard('.css-inserted', 'top-left', 'top-right', 'bottom-left', 'bottom-right', 'color-shadow', 'horizontal-shadow', 'vertical-shadow', 'blur-radius', 'spread-radius', 'background-color-card', 'padding-texts', 'title-color', 'paragraph-color', 'link-color', 'text-decoration-radio', 'disabled-radio');
 
     // Botón mostrar codigo:
-    mostrarCodigo('#simple-card-code', '.show-code', 'p-title-simple-card', 'simple-card-arrow');
+    mostrarCodigo('#simple-card-code', '#show-code', 'p-title-simple-card', 'simple-card-arrow');
 
     
 
@@ -96,6 +98,12 @@ document.addEventListener('DOMContentLoaded', e => {
     changeTextColor('text-link-full', 'link-color-full');
 
     changeBackgroundColor('#text-link-full', 'button-card-full')
+
+    insertingHtmlFullCard('html-full-card');
+
+    insertinCssFullCard('css-full-card');
+
+    mostrarCodigo('#full-card-code', '#full-show-code', 'p-title-full-card', 'full-card-arrow')
 
     
    
