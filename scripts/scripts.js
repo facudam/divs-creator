@@ -99,13 +99,12 @@ document.addEventListener('DOMContentLoaded', e => {
 
     changeBackgroundColor('#text-link-full', 'button-card-full')
 
-    insertingHtmlFullCard('html-full-card');
+    insertingHtmlFullCard('html-full-card', 'full-card__title', 'paragraph-full', 'h-title-full', 'url-link-full', 'text-link-full', 'title-area-full', 'paragraph-area-full', 'area-text-link-full');
 
-    insertinCssFullCard('css-full-card');
+    insertinCssFullCard('css-full-card', 'url-image-full', 'top-left-full', 'top-right-full', 'bottom-right-full', 'bottom-left-full', 'horizontal-shadow-full', 'vertical-shadow-full', 'blur-radius-full', 'spread-radius-full', 'color-shadow-full', 'title-color-full', 'paragraph-color-full', 'link-color-full', 'button-card-full', 'button-size-full');
 
     mostrarCodigo('#full-card-code', '#full-show-code', 'p-title-full-card', 'full-card-arrow')
 
-    
    
 })
 
