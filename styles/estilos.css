@@ -202,6 +202,7 @@ nav{
         background-color: var(--white-color);
         font-size: 18px;
     }
+    
 
 }
 
@@ -667,6 +668,7 @@ nav{
     .css-codigo {
         width: 30%;
     }
+
 }
 
 
@@ -757,7 +759,7 @@ nav{
 .range-inputs .range-inputs__title-height span {
     position: absolute;
     margin-top: 25px;
-    left: 30%;
+    left: 15%;
     text-align: center;
     font-weight: bold;
 }
@@ -768,11 +770,17 @@ nav{
     margin-top: 13px;
     transform: rotateZ(270deg);
     top: 55%;
-    left: -60%;
+    left: -130%;
 }
 
 .range-inputs form {
     width: 80%;
+}
+
+@media screen and (min-width: 400px) {
+    .range-inputs .height-full-card {
+        left: -60%;
+    }
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
