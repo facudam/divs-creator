@@ -1,5 +1,5 @@
 
-export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topRightRadius, bottomRightRadius, bottomLeftRadius, horizontalShadow, verticalShadow, blurRadius, spreadRadius, colorShadow, titleColor, paragraphColor, linkColor, buttonColor, buttonSize) => {
+export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topRightRadius, bottomRightRadius, bottomLeftRadius, horizontalShadow, verticalShadow, blurRadius, spreadRadius, colorShadow, titleColor, paragraphColor, linkColor, buttonColor, buttonSize, inputTitleHeight) => {
 
     const $containerCode = document.getElementById(containerCode),
         $urlImage = document.getElementById(urlImage),
@@ -16,7 +16,8 @@ export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topR
         $paragraphColor = document.getElementById(paragraphColor),
         $linkColor = document.getElementById(linkColor),
         $buttonColor = document.getElementById(buttonColor),
-        $buttonSize = document.getElementById(buttonSize);
+        $buttonSize = document.getElementById(buttonSize),
+        $inputTitleHeight = document.getElementById(inputTitleHeight);
 
     let css = `.full-card {
         width: 100%;
@@ -38,7 +39,7 @@ export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topR
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 78%;
+        top: ${$inputTitleHeight.value}%;
         transition: top .3s ease;
     }
     
@@ -84,7 +85,7 @@ export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topR
 
 
     document.addEventListener('input', e => {
-        if (e.target === $urlImage || e.target === $topLeftRadius || e.target === $topRightRadius || e.target === $bottomLeftRadius || e.target === $bottomRightRadius || e.target === $horizontalShadow || e.target === $verticalShadow || e.target === $blurRadius || e.target === $spreadRadius || e.target === $colorShadow || e.target === $titleColor || e.target === $paragraphColor || e.target === $linkColor || e.target === $buttonColor || e.target === $buttonSize){
+        if (e.target === $urlImage || e.target === $topLeftRadius || e.target === $topRightRadius || e.target === $bottomLeftRadius || e.target === $bottomRightRadius || e.target === $horizontalShadow || e.target === $verticalShadow || e.target === $blurRadius || e.target === $spreadRadius || e.target === $colorShadow || e.target === $titleColor || e.target === $paragraphColor || e.target === $linkColor || e.target === $buttonColor || e.target === $buttonSize || e.target === $inputTitleHeight){
             css = `.full-card {
                 width: 100%;
                 max-width: 280px;
@@ -105,7 +106,7 @@ export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topR
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                top: 78%;
+                top: ${$inputTitleHeight.value}%;
                 transition: top .3s ease;
             }
             

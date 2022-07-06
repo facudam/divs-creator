@@ -274,33 +274,42 @@
 
                     <div class="box-shadow-container">
                         <p class="structure-p">Box-shadow:</p>
-                        <form>
-                            <div class="input-shadow">
-                                <label for="color-shadow-full">Choose a shadow-color</label>
-                                <input id="color-shadow-full" class="color-shadow" type="color" value="#142d49">
+                        
+                        <div class="range-inputs">
+                            <div class="range-inputs__title-height">
+                                <span>Title Position</span>
+                                <input id="height-full-card" class="height-full-card" type="range" min="0" max="100" value="78">
                             </div>
+                            
+                            <form>
+                                <div class="input-shadow">
+                                    <label for="color-shadow-full">Choose a shadow-color</label>
+                                    <input id="color-shadow-full" class="color-shadow" type="color" value="#142d49">
+                                </div>
     
-                            <div class="input-shadow">
-                                <label for="horizontal-shadow-full">Horizontal shadow</label>
-                                <input id="horizontal-shadow-full" type="range" min="-200" max="200" value="0">
-                            </div>
+                                <div class="input-shadow">
+                                    <label for="horizontal-shadow-full">Horizontal shadow</label>
+                                    <input id="horizontal-shadow-full" type="range" min="-200" max="200" value="0">
+                                </div>
     
-                            <div class="input-shadow">
-                                <label for="vertical-shadow-full">Vertical shadow</label>
-                                <input id="vertical-shadow-full" type="range" min="-200" max="200" value="0">
-                            </div>
+                                <div class="input-shadow">
+                                    <label for="vertical-shadow-full">Vertical shadow</label>
+                                    <input id="vertical-shadow-full" type="range" min="-200" max="200" value="0">
+                                </div>
     
-                            <div class="input-shadow">
-                                <label for="blur-radius-full">Blur radius</label>
-                                <input id="blur-radius-full" type="range" min="-200" max="200" value="1">
-                            </div>
+                                <div class="input-shadow">
+                                    <label for="blur-radius-full">Blur radius</label>
+                                    <input id="blur-radius-full" type="range" min="-200" max="200" value="1">
+                                </div>
     
-                            <div class="input-shadow">
-                                <label for="spread-radius-full">Spread radius</label>
-                                <input id="spread-radius-full" type="range" min="-200" max="200" value="1">
-                            </div>
+                                <div class="input-shadow">
+                                    <label for="spread-radius-full">Spread radius</label>
+                                    <input id="spread-radius-full" type="range" min="-200" max="200" value="1">
+                                </div>
     
-                        </form>
+                            </form>
+                        </div>
+                        
                     </div>
                     <!-- Input para el tamaño del botón-->
                     <div class="padding-text">
