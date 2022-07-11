@@ -410,7 +410,7 @@
             <div class="top-card">
                 <a href="#" target="_blank" rel="noopener noreferrer">
                     <div class="top-card__img">
-                        <img src="https://cdn.pixabay.com/photo/2022/07/04/06/25/butterfly-7300501__340.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/26/beach-1867524__340.jpg" alt="">
                     </div>
                     <div class="top-card__content">
                         <h3 class="top-card__content__title">Lorem ipsum dolor sit amet consectetur</h3>
@@ -418,7 +418,166 @@
                     </div>
                 </a>    
             </div>
+            <div class="card-controls">
+                <div class="title-controls">
+                    <div id="structure-top" class="title-controls__btn">Structure styles</div>
+                    <div id="content-top" class="title-controls__btn">Content</div>
+                    <div id="color-top" class="title-controls__btn">Color styles</div>
+                </div>
+
+                <div class="structure-styles structure-styles-full">
+                    <div class="border-radius-container">
+                        <p class="structure-p">Border-radius:</p>
+                        <form>
+                            <div class="flex-container">
+                                <div class="input-borders">
+                                    <label for="top-left-top">Top-left</label>
+                                    <input id="top-left-top" type="number" value="5">
+                                </div>
+    
+                                <div class="input-borders">
+                                    <label for="top-right-top">Top-right</label>
+                                    <input id="top-right-top" type="number" value="5">
+                                </div>
+                            </div>
+    
+                            <div class="flex-container">
+                                <div class="input-borders">
+                                    <label for="bottom-left-top">Bottom-left</label>
+                                    <input id="bottom-left-top" type="number" value="5">
+                                </div>
+    
+                                <div class="input-borders">
+                                    <label for="bottom-right-top">Bottom-right</label>
+                                    <input id="bottom-right-top" type="number" value="5">
+                                </div> 
+                            </div>
+                            
+    
+                                             
+                        </form>
+                    </div>
+
+                    <div class="box-shadow-container">
+                        <p class="structure-p">Box-shadow:</p>
+                        
+                        <div class="range-inputs">
+                            <div class="range-inputs__title-height">
+                                <span>Paragraph height</span>
+                                <input id="height-top-card" class="height-full-card" type="range" min="0" max="250" value="115">
+                            </div>
+                            
+                            <form>
+                                <div class="input-shadow">
+                                    <label for="color-shadow-top">Choose a shadow-color</label>
+                                    <input id="color-shadow-top" class="color-shadow" type="color" value="#c5c5c5">
+                                </div>
+    
+                                <div class="input-shadow">
+                                    <label for="horizontal-shadow-top">Horizontal shadow</label>
+                                    <input id="horizontal-shadow-top" type="range" min="-200" max="200" value="1">
+                                </div>
+    
+                                <div class="input-shadow">
+                                    <label for="vertical-shadow-top">Vertical shadow</label>
+                                    <input id="vertical-shadow-top" type="range" min="-200" max="200" value="2">
+                                </div>
+    
+                                <div class="input-shadow">
+                                    <label for="blur-radius-top">Blur radius</label>
+                                    <input id="blur-radius-top" type="range" min="-200" max="200" value="10">
+                                </div>
+    
+                                <div class="input-shadow">
+                                    <label for="spread-radius-top">Spread radius</label>
+                                    <input id="spread-radius-top" type="range" min="-200" max="200" value="1">
+                                </div>
+    
+                            </form>
+                        </div>
+                        
+                    </div>   
+                </div>
+    
+                <div class="content-styles content-styles-full">
+                    <div class="title-content">
+                        <p class="structure-p">Title Properties</p>
+                        <form class="title-content-form">
+                            <textarea name="title-area" id="title-area-full" class="title-area" cols="30" rows="10" placeholder="Write your title-card here"></textarea>
+                            <select name="h-title-full" id="h-title-full">
+                                <option>h1</option>
+                                <option>h2</option>
+                                <option selected>h3</option>
+                                <option>h4</option>
+                                <option>h5</option>
+                                <option>h6</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="paragraph-area">
+                        <p class="structure-p">Card Text</p>
+                        <textarea name="paragraph-area" id="paragraph-area-full" class="paragraph-area-class" cols="30" rows="10" placeholder="Write your text-card here "></textarea>
+                    </div>
+                    <div class="image-link">
+                        <p class="structure-p">Card image</p>
+                        <input id="url-image-full" class="url-image" type="url" placeholder="Add url image">
+                    </div>
+                    <div class="link-area">
+                        <p class="structure-p">Links data</p>
+                        <form class="link-area-form">
+                            <div class="link-area-form__inputs">
+                                <input id="url-link-full" class="url-link" type="url" placeholder="Add your link-card here">
+                                <input id="area-text-link-full" class="text-link" type="text" placeholder="Text-link">
+                            </div>
+                            
+                            
+                            
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="colors-styles colors-styles-full">
+                    <form>
+                        
+                        <div class="color-styles__controls">
+                            <label for="title-color-full">Title-color: </label>
+                            <input id="title-color-full" type="color" value="#ffffff">
+                        </div>
+                        <div class="color-styles__controls">
+                            <label for="paragraph-color-full">Paragraph-color: </label>
+                            <input id="paragraph-color-full" type="color" value="#ffffff">
+                        </div>
+                        <div class="color-styles__controls">
+                            <label for="link-color-full">Link-card-color: </label>
+                            <input id="link-color-full" type="color" value="#ffffff">
+                        </div>
+                        <div class="color-styles__controls">
+                            <label for="button-card-full">Button-card-color: </label>
+                            <input id="button-card-full" type="color" value="#0f7abe">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
             
+        </div>
+
+        <div id="full-show-code" class="show-code">
+            <p id="p-title-full-card" class="show-code__title">Get code</p>
+            <span id="full-card-arrow">↓</span>
+        </div>
+        
+        <div id="full-card-code" class="codigo">
+            
+            <div class="html-codigo">
+                <span class="code-title">HTML</span>
+                <div id="html-full-card" class="html-inserted"></div>
+            </div>
+            <div class="css-codigo">
+                <span class="code-title">CSS</span>
+                <div id="css-full-card" class="css-inserted"></div>
+            </div>
         </div>
     </section>
 
