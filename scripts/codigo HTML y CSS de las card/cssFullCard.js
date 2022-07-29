@@ -103,6 +103,7 @@ export const insertinCssFullCard = (containerCode, urlImage, topLeftRadius, topR
             
             .absolute-container {
                 position: absolute;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
