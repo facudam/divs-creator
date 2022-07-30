@@ -108,7 +108,10 @@ document.addEventListener('DOMContentLoaded', e => {
 
     mostrarCodigo('#full-card-code', '#full-show-code', 'p-title-full-card', 'full-card-arrow')
 
-   
+
+   // +++++++++++++++ TOP-CARD FUNCIONES ++++++++++++++++++++ //
+
+   getControls('structure-top', 'content-top', 'color-top', '.structure-styles-top', '.content-styles-top', '.colors-styles-top')
 })
 
 
