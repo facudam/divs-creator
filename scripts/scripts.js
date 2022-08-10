@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     changeBackgroundColor('#text-link-full', 'button-card-full');
 
-    changeTitleHeight('.absolute-container', 'height-full-card')
+    changeTitleHeight('height-full-card', '--top-height', '%')
 
     insertingHtmlFullCard('html-full-card', 'full-card__title', 'paragraph-full', 'h-title-full', 'url-link-full', 'text-link-full', 'title-area-full', 'paragraph-area-full', 'area-text-link-full');
 
@@ -112,6 +112,16 @@ document.addEventListener('DOMContentLoaded', e => {
    // +++++++++++++++ TOP-CARD FUNCIONES ++++++++++++++++++++ //
 
    getControls('structure-top', 'content-top', 'color-top', '.structure-styles-top', '.content-styles-top', '.colors-styles-top')
+
+   changeBorderRadius('.top-card', 'top-left-top', 'top-right-top', 'bottom-left-top', 'bottom-right-top');
+
+   changeBoxShadow('.top-card', 'color-shadow-top', 'horizontal-shadow-top', 'vertical-shadow-top', 'blur-radius-top', 'spread-radius-top');
+
+   changeTitleHeight('height-top-card', '--top-paragraph-height', 'px');
+
+   changeTitleCard('title-area-top', '.top-card__content__title');
+
+   changeParagraphCard('paragraph-area-top', 'top-paragraph');
 })
 
 
