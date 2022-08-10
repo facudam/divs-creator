@@ -70,6 +70,9 @@ export const replaceTitleCard = (parentNode, titleToReplace, inputTitle, classTi
 
             changeTitleCard('title-area-full', '.full-card__title');
             changeTextColor('full-card__title', 'title-color-full' )
+
+            changeTitleCard('title-area-top', '.top-card__content__title');
+            changeTextColor('top-card-title', 'title-color-top')
         }
         
     })

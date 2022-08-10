@@ -122,6 +122,20 @@ document.addEventListener('DOMContentLoaded', e => {
    changeTitleCard('title-area-top', '.top-card__content__title');
 
    changeParagraphCard('paragraph-area-top', 'top-paragraph');
+
+   addImageUrl('url-image-top', 'top-image');
+
+   addLinkToCard('top-card-link', 'url-link-top');
+
+   replaceTitleCard('.top-card__content', 'top-card-title', 'h-title-top', 'top-card__content__title', 'top-card-title', 'title-color-top', 0);
+
+   changeTextColor('top-card-title', 'title-color-top');
+
+   changeTextColor('top-paragraph', 'paragraph-color-top');
+
+   changeBackgroundColor('.top-card', 'background-color-top');
+
+
 })
 
 
