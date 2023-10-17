@@ -13,12 +13,14 @@ export const insertingHtmlFullCard = (htmlContainer, htitle, pTitle, hTag, hRef,
         $inputParagraph = document.getElementById(inputParagraph),
         $inputTextLink = document.getElementById(inputTextLink);
 
-    let html = `<div class="full-card">
+    let html = `
+<div class="full-card">
     <div class="absolute-container">
         <${$hTag.value} class="full-card__title">${ $hTitle.innerHTML }</${$hTag.value}>
         <p class="full-card__paragraph" >${ $pTitle.innerHTML }</p>
         <a class="full-card__a" href="${$hRef.value}" target="_blank" rel="noopener noreferrer">${$link.innerHTML}</a>
     </div>
+</div>
     `;
 
     $htmlContainer.innerText = html;
@@ -26,12 +28,14 @@ export const insertingHtmlFullCard = (htmlContainer, htitle, pTitle, hTag, hRef,
 
     document.addEventListener('input', e => {
         if(e.target === $hRef || e.target === $hTag) {
-            html = `<div class="full-card">
+            html = `
+<div class="full-card">
     <div class="absolute-container">
         <${$hTag.value} class="full-card__title">${ $hTitle.innerHTML }</${$hTag.value}>
         <p class="full-card__paragraph" >${ $pTitle.innerHTML }</p>
         <a class="full-card__a" href="${$hRef.value}" target="_blank" rel="noopener noreferrer">${$link.innerHTML}</a>
     </div>
+</div>
     `;
 
     $htmlContainer.innerText = html;
@@ -40,12 +44,14 @@ export const insertingHtmlFullCard = (htmlContainer, htitle, pTitle, hTag, hRef,
 
     document.addEventListener('keyup', e => {
         if (e.target === $inputTitle || e.target === $inputParagraph || e.target === $inputTextLink) {
-            html = `<div class="full-card">
+            html = `
+<div class="full-card">
     <div class="absolute-container">
         <${$hTag.value} class="full-card__title">${ $hTitle.innerHTML }</${$hTag.value}>
         <p class="full-card__paragraph" >${ $pTitle.innerHTML }</p>
         <a class="full-card__a" href="${$hRef.value}" target="_blank" rel="noopener noreferrer">${$link.innerHTML}</a>
     </div>
+</div>
     `;
 
     $htmlContainer.innerText = html;
