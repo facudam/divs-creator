@@ -22,6 +22,7 @@ import { insertingHtmlFullCard } from "./codigo HTML y CSS de las card/htmlFullC
 import { insertinCssFullCard } from "./codigo HTML y CSS de las card/cssFullCard.js";
 import { changeTitleHeight } from "./titleHeight.js";
 import { insertingHtmlTopCard } from "./codigo HTML y CSS de las card/htmlTopCard.js";
+import { insertingCssTopCard } from "./codigo HTML y CSS de las card/cssTopCard.js";
 
 document.addEventListener('DOMContentLoaded', e => {
     mostrarMenuNav('#boton-hamburguesa', '#links-menu');
@@ -83,7 +84,8 @@ document.addEventListener('DOMContentLoaded', e => {
    changeTextColor('top-card-title', 'title-color-top');
    changeTextColor('top-paragraph', 'paragraph-color-top');
    changeBackgroundColor('.top-card', 'background-color-top');
-   insertingHtmlTopCard('url-link-top', 'url-image-top', 'h-title-top', 'title-area-top', 'paragraph-area-top', 'html-top-card', 'top-card-title', 'top-paragraph')
+   insertingHtmlTopCard('url-link-top', 'url-image-top', 'h-title-top', 'title-area-top', 'paragraph-area-top', 'html-top-card', 'top-card-title', 'top-paragraph');
+   insertingCssTopCard('css-top-card', 'top-left-top', 'top-right-top', 'bottom-left-top', 'bottom-right-top', 'horizontal-shadow-top', 'vertical-shadow-top', 'blur-radius-top', 'spread-radius-top', 'color-shadow-top', 'height-top-card', 'title-color-top', 'paragraph-color-top', 'background-color-top')
    mostrarCodigo('#top-card-code', '#top-show-code', '#p-title-top-card', '#top-card-arrow')
 })
 
