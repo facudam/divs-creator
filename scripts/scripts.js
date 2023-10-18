@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', e => {
    changeBackgroundColor('.top-card', 'background-color-top');
    insertingHtmlTopCard('url-link-top', 'url-image-top', 'h-title-top', 'title-area-top', 'paragraph-area-top', 'html-top-card', 'top-card-title', 'top-paragraph');
    insertingCssTopCard('css-top-card', 'top-left-top', 'top-right-top', 'bottom-left-top', 'bottom-right-top', 'horizontal-shadow-top', 'vertical-shadow-top', 'blur-radius-top', 'spread-radius-top', 'color-shadow-top', 'height-top-card', 'title-color-top', 'paragraph-color-top', 'background-color-top')
-   mostrarCodigo('#top-card-code', '#top-show-code', '#p-title-top-card', '#top-card-arrow')
+   mostrarCodigo('#top-card-code', '#top-show-code', 'p-title-top-card', 'top-card-arrow')
 })
 
 
