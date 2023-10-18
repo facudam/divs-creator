@@ -7,8 +7,6 @@ export const insertingHtmlFullCard = (htmlContainer, htitle, pTitle, hTag, hRef,
         $hTag = document.getElementById(hTag),
         $hRef = document.getElementById(hRef),
         $link = document.getElementById(link);
-
-
     const $inputTitle = document.getElementById(inputTitle),
         $inputParagraph = document.getElementById(inputParagraph),
         $inputTextLink = document.getElementById(inputTextLink);

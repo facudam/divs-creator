@@ -10,11 +10,10 @@ export const mostrarCodigo = (codeContainer, codeButton, pTitle, span) => {
     // Con esta función modificamos la propiedad height -desde una variable- de la clase 'mostrar-code', si el ancho del viewport es menor a 965px la altura será 500px y sino 250px.
     const pantallaMostrarCode = () => {
     if ( ancho < 965 ) {
-
         $html.style.setProperty('--mostrar-code', '500px')
         } else {
             $html.style.setProperty('--mostrar-code', '250px')
-            }
+        }
     } 
     
     pantallaMostrarCode()

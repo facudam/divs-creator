@@ -21,6 +21,7 @@ import { changeBackgroundImage } from "./backgroundImageCard.js";
 import { insertingHtmlFullCard } from "./codigo HTML y CSS de las card/htmlFullCard.js";
 import { insertinCssFullCard } from "./codigo HTML y CSS de las card/cssFullCard.js";
 import { changeTitleHeight } from "./titleHeight.js";
+import { insertingHtmlTopCard } from "./codigo HTML y CSS de las card/htmlTopCard.js";
 
 document.addEventListener('DOMContentLoaded', e => {
     mostrarMenuNav('#boton-hamburguesa', '#links-menu');
@@ -82,7 +83,8 @@ document.addEventListener('DOMContentLoaded', e => {
    changeTextColor('top-card-title', 'title-color-top');
    changeTextColor('top-paragraph', 'paragraph-color-top');
    changeBackgroundColor('.top-card', 'background-color-top');
-
+   insertingHtmlTopCard('url-link-top', 'url-image-top', 'h-title-top', 'title-area-top', 'paragraph-area-top', 'html-top-card', 'top-card-title', 'top-paragraph')
+   mostrarCodigo('#top-card-code', '#top-show-code', '#p-title-top-card', '#top-card-arrow')
 })
 
 
