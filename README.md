@@ -9,9 +9,9 @@ It was created with vanilla JavaScript so it needs no dependencies installations
 - JavaScript
 
 ## Dependencies:
--NO DEPENDENCIES.
+- NO DEPENDENCIES.
 
 
-- See [live project](https://meliclon.netlify.app/ "Mercado libre clone")
+- See [live project](https://divscreator.netlify.app/ "Mercado libre clone")
 
 
