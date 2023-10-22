@@ -29,6 +29,7 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     box-shadow: ${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value};
     overflow: hidden;
     background-color: ${$bkgColor.value};
+    font-family: 'Lato', sans-serif;
 }
 
 .img-container {
@@ -43,12 +44,14 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     text-align: center;
     padding: ${$paddingCard.value}px;
     color: ${$titleColor.value};
+    font-size: 21px;
 }
 
 .p-card {
     padding: ${$paddingCard.value}px;
     text-align: center;
     color: ${$paragraphColor.value};
+    font-size: 18px;
 }
 
 .read-more {
@@ -58,6 +61,7 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     text-decoration: ${tDecoration};
     color: ${$linkColor.value};
     padding-bottom: 12px;
+    font-size: 18px;
 }
     `;
 
@@ -75,6 +79,7 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     box-shadow: ${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value};
     overflow: hidden;
     background-color: ${$bkgColor.value};
+    font-family: 'Lato', sans-serif;
 }
 
 .img-container {
@@ -89,12 +94,14 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     text-align: center;
     padding: ${$paddingCard.value}px;
     color: ${$titleColor.value};
+    font-size: 21px;
 }
 
 .p-card {
     padding: ${$paddingCard.value}px;
     text-align: center;
     color: ${$paragraphColor.value};
+    font-size: 18px;
 }
 
 .read-more {
@@ -104,6 +111,7 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     text-decoration: ${tDecoration};
     color: ${$linkColor.value};
     padding-bottom: 12px;
+    font-size: 18px;
 }
             `;
         
@@ -125,6 +133,7 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     box-shadow: ${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value};
     overflow: hidden;
     background-color: ${$bkgColor.value};
+    font-family: 'Lato', sans-serif;
 }
 
 .img-container {
@@ -174,6 +183,7 @@ export const insertingCssSimpleCard = (containerCode, inputTopLeft, inputTopRigh
     box-shadow: ${$horizontalShadow.value}px ${$verticalShadow.value}px ${$blurRadius.value}px ${$spreadRadius.value}px ${$colorShadow.value};
     overflow: hidden;
     background-color: ${$bkgColor.value};
+    font-family: 'Lato', sans-serif;
 }
 
 .img-container {

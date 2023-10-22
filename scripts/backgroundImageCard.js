@@ -6,6 +6,8 @@ export const changeBackgroundImage = (card, inputUrl) => {
     document.addEventListener('input', e => {
         if ( e.target === $inputUrl ) {
             $card.style.background = `linear-gradient(rgba(51, 51, 56, 0.5), rgba(51, 51, 56, 0.5)), url(${$inputUrl.value}`;
+            $card.style.backgroundSize = `cover`
+            $card.style.backgroundPosition = `center`
         }
     })
 }

@@ -43,6 +43,7 @@ function showCssTopCard(topLeftB, topRightB, bottomLeftB, bottomRightB, horizont
 .top-card__content__title {
     color: ${titleColor.value};
     font-weight: bolder;
+    font-size: 21px;
 }
 
 .top-card__content__paragraph {
@@ -50,6 +51,7 @@ function showCssTopCard(topLeftB, topRightB, bottomLeftB, bottomRightB, horizont
     height: 0;
     overflow: hidden;
     transition: all .5s ease;
+    font-size: 18px;
 }
 
 .top-card:hover .top-card__img{
